@@ -103,6 +103,10 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/hkwind/hkwind.github.io
-  branch: master
-  token: $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
+  repo: 
+    github: 
+      url: https://github.com/hkwind/hkwind.github.io
+      branch: master
+      token: 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
+
+  
