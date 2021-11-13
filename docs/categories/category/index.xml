@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>category on My New Hugo Site</title>
-    <link>http://example.org/categories/category/</link>
-    <description>Recent content in category on My New Hugo Site</description>
+    <title>category on James Blog</title>
+    <link>https://hkwind.github.io/categories/category/</link>
+    <description>Recent content in category on James Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Nov 2021 11:44:21 +0800</lastBuildDate><atom:link href="http://example.org/categories/category/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Nov 2021 11:44:21 +0800</lastBuildDate><atom:link href="https://hkwind.github.io/categories/category/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FirstBlog</title>
-      <link>http://example.org/post/firstblog/</link>
+      <link>https://hkwind.github.io/post/firstblog/</link>
       <pubDate>Sat, 13 Nov 2021 11:44:21 +0800</pubDate>
       
-      <guid>http://example.org/post/firstblog/</guid>
+      <guid>https://hkwind.github.io/post/firstblog/</guid>
       <description></description>
     </item>
     
