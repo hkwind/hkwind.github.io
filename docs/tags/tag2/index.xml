@@ -9,10 +9,19 @@
     <lastBuildDate>Sat, 13 Nov 2021 11:44:21 +0800</lastBuildDate><atom:link href="https://hkwind.github.io/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FirstBlog</title>
-      <link>https://hkwind.github.io/post/firstblog/</link>
+      <link>https://hkwind.github.io/post/books/secondblog/</link>
       <pubDate>Sat, 13 Nov 2021 11:44:21 +0800</pubDate>
       
-      <guid>https://hkwind.github.io/post/firstblog/</guid>
+      <guid>https://hkwind.github.io/post/books/secondblog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FirstBlog</title>
+      <link>https://hkwind.github.io/post/programming/firstblog/</link>
+      <pubDate>Sat, 13 Nov 2021 11:44:21 +0800</pubDate>
+      
+      <guid>https://hkwind.github.io/post/programming/firstblog/</guid>
       <description></description>
     </item>
     

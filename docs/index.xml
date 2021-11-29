@@ -5,15 +5,18 @@
     <link>https://hkwind.github.io/</link>
     <description>Recent content on James Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 13 Nov 2021 11:44:21 +0800</lastBuildDate><atom:link href="https://hkwind.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://hkwind.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>FirstBlog</title>
-      <link>https://hkwind.github.io/post/firstblog/</link>
-      <pubDate>Sat, 13 Nov 2021 11:44:21 +0800</pubDate>
+      <title>James Chong&#39;s Blog</title>
+      <link>https://hkwind.github.io/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hkwind.github.io/post/firstblog/</guid>
-      <description></description>
+      <guid>https://hkwind.github.io/</guid>
+      <description>You&amp;rsquo;ve reached my blog! Welcome!
+This is my personal blog where I record what I have learnt and read throughout the years.
+Currently, I&amp;rsquo;m focusing on programming stuff and some books about finance. But maybe there will be more categories as I continue my journey of learning.
+There&amp;rsquo;s a motto that I love very much, which I heard from the youtuber Yes Theory:
+Seek Discomfort We should all be brave enough to step out of comfort zone and try seek discomfort few times a year.</description>
     </item>
     
   </channel>
