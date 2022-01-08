@@ -6,7 +6,47 @@
     <description>Recent content in Posts on James&#39; Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hkwind.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hkwind.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Let&#39;s build a blog with GitHub and Hugo - Introduction</title>
+      <link>https://hkwind.github.io/post/howtobuildablog_intro/</link>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://hkwind.github.io/post/howtobuildablog_intro/</guid>
+      <description>
+        
+          &lt;p&gt;Wanna blog? Follow the instruction and build yourself a blog in a day or two!&lt;/p&gt;
+&lt;!---thumbnail = &#34;&#34;--&gt;
+&lt;!--&lt;p align=&#34;center&#34;&gt;
+#	&lt;img src=&#34;https://hkwind.github.io/images/MillionareInYou_CoverPic.jpg&#34; width = &#34;200&#34;/&gt;
+# &lt;/p&gt;--&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Disclaimer: &lt;br /&gt; I’m not an expert in building a blog and I do not know every feature in Github &amp;amp; Hugo. &lt;br /&gt;
+However, we are on the same learning journey. I would love to share what I have learnt. &lt;br /&gt;
+Therefore, if you have some problems, feel free to raise them. Then, we can discuss it here and everyone can learn something from it!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;foreword&#34;&gt;&lt;strong&gt;Foreword&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Welcome! I suppose you want to start blogging. For whatever purpose, that does not matter.
+What matters is that you do want to build your own blog, and you stumble upon this article.
+In this series of blog articles, I’ll show you how to create your own website and blog, and more importantly how to maintain it. Let&#39;s get started!&lt;/p&gt;
+&lt;p&gt;In this series, as the header says, we are using Github and Hugo to build the blog.
+I’ve tried several ways to construct my blog, and eventually, I’m satisfied with this outcome.
+That’s why at the start of this introduction article, I’m going to show you why I would build my blog with Github and Hugo.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;advantages-of-using-github--hugo-to-build-a-blog&#34;&gt;&lt;strong&gt;Advantages of using GitHub &amp;amp; Hugo to build a blog&lt;/strong&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;free-price&#34;&gt;Free Price&lt;/h4&gt;
+&lt;p&gt;First of all, it is free. TOTALLY FREE. Not even a single penny was spent when building this blog. All you need is a PC to save the files, an internet connection so you can connect with the GitHub server, and an email (Google Mail is fine) account to create a Github account. Therefore, even if you are uncertain about whether you will continue blogging, your desire to try blogging won’t be deterred by the monthly / yearly subscription fee of those blog hosting sites.&lt;/p&gt;
+&lt;h4 id=&#34;low-setup-difficulty&#34;&gt;Low Setup Difficulty&lt;/h4&gt;
+&lt;p&gt;Second, it is easy to set up. Of course, Medium and other blog hosting websites do not require setup at all, but free things come with a cost. However, the setup process of Github and Hugo are much less complicated than other free options, which makes this combination a better choice than the others. Usually, you can finish setup and post your first blog within the first few days if you have followed the steps in this blog carefully.&lt;/p&gt;
+&lt;h4 id=&#34;no-requirement-on-programming-knowledge&#34;&gt;No requirement on programming knowledge&lt;/h4&gt;
+&lt;p&gt;Third, you can build your own blog without any prerequisite programming knowledge. Or let me paraphrase it, you do not need any programming knowledge because I have done most of the programming work for you. What you need to do is follow the steps. However, you still have to know something about coding for uploading blogs (very easy) and customizing the blog (a bit harder), which will be discussed in later sections.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;ending&#34;&gt;&lt;strong&gt;Ending&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;After all that has been said, I’m sure you understand what’s the benefit of going for the Github + Hugo approach. If you’re confident that you want to try it out, let&#39;s continue on our next blog: Create a GitHub account and domain.&lt;/p&gt;
+        
+      </description>
+    </item>
+    
     <item>
       <title>賺錢，也賺幸福</title>
       <link>https://hkwind.github.io/post/millionareinyou_20220101/</link>
