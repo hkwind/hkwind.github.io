@@ -6,7 +6,90 @@
     <description>Recent content in Posts on James&#39; Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hkwind.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hkwind.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Let&#39;s build a blog with GitHub and Hugo - Part 1 - GitHub Settings</title>
+      <link>https://hkwind.github.io/post/howtobuildablog_part1_github/</link>
+      <pubDate>Sat, 22 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://hkwind.github.io/post/howtobuildablog_part1_github/</guid>
+      <description>
+        
+          &lt;p&gt;Wanna blog? Follow the instruction and build yourself a blog in a day or two!&lt;/p&gt;
+&lt;!---thumbnail = &#34;&#34;--&gt;
+&lt;!--&lt;p align=&#34;center&#34;&gt;
+#	&lt;img src=&#34;https://hkwind.github.io/images/MillionareInYou_CoverPic.jpg&#34; width = &#34;200&#34;/&gt;
+# &lt;/p&gt;--&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Disclaimer: &lt;br /&gt; I’m not an expert in building a blog and I do not know every feature in Github &amp;amp; Hugo. &lt;br /&gt;
+However, we are on the same learning journey. I would love to share what I have learnt. &lt;br /&gt;
+Therefore, if you have some problems, feel free to raise them. Then, we can discuss it here and everyone can learn something from it!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;foreword&#34;&gt;&lt;strong&gt;Foreword&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Welcome! I suppose you want to start blogging. For whatever purpose, that does not matter.
+What matters is that you do want to build your own blog, and you stumble upon this article.
+In this series of blog articles, I’ll show you how to create your own website and blog, and more importantly how to maintain it. Let&#39;s get started!&lt;/p&gt;
+&lt;p&gt;GitHub is a place where developers can upload, manage and control versions of their code. In technical terms, it is called a repository.
+What’s unique about Github is that it can be used as a hosting service provider.
+Therefore, after we upload our code and do some settings changes in GitHub, it will automatically help us build a website! How convenient!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;create-github-account&#34;&gt;&lt;strong&gt;Create GitHub Account&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The first step is to create a GitHub account. First, go to &lt;a href=&#34;https://github.com/&#34;&gt;https://github.com/&lt;/a&gt; and start the signup procedure. GitHub gives clear instructions, so you can simply follow them. One thing to notice: Be careful about your username, as it should be shown in your website URL later on.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+	&lt;img src=&#34;https://hkwind.github.io/images/Github_CreateUser.png&#34; width = &#34;600&#34;/&gt;
+&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+	&lt;img src=&#34;https://hkwind.github.io/images/Github_SelectFeature.png&#34;width = &#34;600&#34;/&gt;
+&lt;/p&gt;
+&lt;p&gt;As before mentioned, we will be going with the costless option i.e. the free plan.
+The GitHub free plan has already got all the functionalities we need.
+If you are feeling good later and wants to upgrade, it&#39;s up to you!&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+	&lt;img src=&#34;https://hkwind.github.io/images/Github_Free_Plan.png&#34;width = &#34;600&#34;/&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;create-project-repository&#34;&gt;&lt;strong&gt;Create Project Repository&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;After filling in all required information and finishing all necessary verifications, you should be led to the dashboard page.
+This is the so-called front page, and you can access all of your projects here.
+Click the &amp;quot;New&amp;quot; or &amp;quot;Create repository&amp;quot; button on the left panel to start building your account.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+	&lt;img src=&#34;https://hkwind.github.io/images/Github_CreateRepository.png&#34;width = &#34;600&#34;/&gt;
+&lt;/p&gt;
+&lt;p&gt;For repository name, it should be &amp;quot;yourusername&amp;quot;.github.io.
+For example, as my username is &amp;quot;testinguser0122&amp;quot;, my repository name should be ‘testinguser0122.github.io‘.
+This is also the URL people use to access your blog.
+Beware that the repository should be public as GitHub web hosting services are only free for public repositories.
+As for the below option, we should add a readme file (for introduction purposes) and add a license (GNU General Public License v3.0).&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+	&lt;img src=&#34;https://hkwind.github.io/images/Github_CreateRepositoryFillData.png&#34;width = &#34;600&#34;/&gt;
+&lt;/p&gt;
+&lt;p&gt;After all settings have been set, we can click “Create” and the repository is ready!
+As you can see, our repository only have two files: A README file and the LICENSE file.
+We should add more files to it, but for now we can leave it as be.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+	&lt;img src=&#34;https://hkwind.github.io/images/Github_RepositoryFrontPage.png&#34;width = &#34;600&#34;/&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;create-our-own-website&#34;&gt;&lt;strong&gt;Create our own Website&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;After setting up the repository, its time to build our own website.&lt;/p&gt;
+&lt;p&gt;Go to settings page which the button should be around the top right corner of the project page.
+In settings, go to the Pages and select Docs branch as the source for the repository. Click “Save” and the confirmation message &amp;quot;Your website is published&amp;quot; is shown.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+	&lt;img src=&#34;https://hkwind.github.io/images/Github_PageSettings.png&#34;width = &#34;600&#34;/&gt;
+&lt;/p&gt;
+&lt;p&gt;We can then see that the page is published and the website can be accessed now! Your website should almost look identical just like mine.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+	&lt;img src=&#34;https://hkwind.github.io/images/Github_Webpage.png&#34;width = &#34;600&#34;/&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;ending&#34;&gt;&lt;strong&gt;Ending&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;We are all set! Our website is built.&lt;/p&gt;
+&lt;p&gt;Well it looks blank and we have not yet put our content in.
+&lt;br&gt;But don&#39;t worry, in the next blog, I will introduce you how to start making your blog. Stay tuned!&lt;/p&gt;
+        
+      </description>
+    </item>
+    
     <item>
       <title>Learning how to learn - A Cousera course Introduction</title>
       <link>https://hkwind.github.io/post/learning-how-to-learn/</link>

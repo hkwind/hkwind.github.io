@@ -1,18 +1,18 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "/Users/longshanj/Documents/Github/Localblog",
+	"sourceRoot": "/Users/longshanj/Documents/Github/localblog",
 	"sources": [
 		"themes/clarity/assets/sass/main.sass",
-		"../../Github/Localblog/themes/clarity/assets/sass/_variables.sass",
-		"../../Github/Localblog/themes/clarity/assets/sass/_override.sass",
-		"../../Github/Localblog/themes/clarity/assets/sass/_fonts.sass",
-		"../../Github/Localblog/themes/clarity/assets/sass/_base.sass",
-		"../../Github/Localblog/themes/clarity/assets/sass/_components.sass",
-		"../../Github/Localblog/themes/clarity/assets/sass/_utils.sass",
-		"../../Github/Localblog/themes/clarity/assets/sass/_mobile.sass",
-		"../../Github/Localblog/themes/clarity/assets/sass/_syntax.sass",
-		"../../Github/Localblog/themes/clarity/assets/sass/_custom.sass"
+		"../../Github/localblog/themes/clarity/assets/sass/_variables.sass",
+		"../../Github/localblog/themes/clarity/assets/sass/_override.sass",
+		"../../Github/localblog/themes/clarity/assets/sass/_fonts.sass",
+		"../../Github/localblog/themes/clarity/assets/sass/_base.sass",
+		"../../Github/localblog/themes/clarity/assets/sass/_components.sass",
+		"../../Github/localblog/themes/clarity/assets/sass/_utils.sass",
+		"../../Github/localblog/themes/clarity/assets/sass/_mobile.sass",
+		"../../Github/localblog/themes/clarity/assets/sass/_syntax.sass",
+		"../../Github/localblog/themes/clarity/assets/sass/_custom.sass"
 	],
 	"sourcesContent": [
 		"@import 'variables';\n@import 'override';\n@import 'fonts';\n@import 'base';\n@import 'components';\n@import 'utils';\n@import 'mobile';\n@import 'syntax';\n@import 'custom';\n",
