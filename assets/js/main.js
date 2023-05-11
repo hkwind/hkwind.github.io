@@ -1,5 +1,5 @@
 /*
-	Phantom by HTML5 UP
+	Future Imperfect by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -7,7 +7,10 @@
 (function($) {
 
 	var	$window = $(window),
-		$body = $('body');
+		$body = $('body'),
+		$menu = $('#menu'),
+		$sidebar = $('#sidebar'),
+		$main = $('#main');
 
 	// Breakpoints.
 		breakpoints({
@@ -15,8 +18,7 @@
 			large:    [ '981px',   '1280px' ],
 			medium:   [ '737px',   '980px'  ],
 			small:    [ '481px',   '736px'  ],
-			xsmall:   [ '361px',   '480px'  ],
-			xxsmall:  [ null,      '360px'  ]
+			xsmall:   [ null,      '480px'  ]
 		});
 
 	// Play initial animations on page load.
@@ -26,160 +28,68 @@
 			}, 100);
 		});
 
-	// Touch?
-		if (browser.mobile)
-			$body.addClass('is-touch');
+	// Menu.
+		$menu
+			.appendTo($body)
+			.panel({
+				delay: 500,
+				hideOnClick: true,
+				hideOnSwipe: true,
+				resetScroll: true,
+				resetForms: true,
+				side: 'right',
+				target: $body,
+				visibleClass: 'is-menu-visible'
+			});
 
-	// Forms.
-		var $form = $('form');
+	// Search (header).
+		var $search = $('#search'),
+			$search_input = $search.find('input');
 
-		// Auto-resizing textareas.
-			$form.find('textarea').each(function() {
+		$body
+			.on('click', '[href="#search"]', function(event) {
 
-				var $this = $(this),
-					$wrapper = $('<div class="textarea-wrapper"></div>'),
-					$submits = $this.find('input[type="submit"]');
+				event.preventDefault();
 
-				$this
-					.wrap($wrapper)
-					.attr('rows', 1)
-					.css('overflow', 'hidden')
-					.css('resize', 'none')
-					.on('keydown', function(event) {
+				// Not visible?
+					if (!$search.hasClass('visible')) {
 
-						if (event.keyCode == 13
-						&&	event.ctrlKey) {
+						// Reset form.
+							$search[0].reset();
 
-							event.preventDefault();
-							event.stopPropagation();
+						// Show.
+							$search.addClass('visible');
 
-							$(this).blur();
+						// Focus input.
+							$search_input.focus();
 
-						}
-
-					})
-					.on('blur focus', function() {
-						$this.val($.trim($this.val()));
-					})
-					.on('input blur focus --init', function() {
-
-						$wrapper
-							.css('height', $this.height());
-
-						$this
-							.css('height', 'auto')
-							.css('height', $this.prop('scrollHeight') + 'px');
-
-					})
-					.on('keyup', function(event) {
-
-						if (event.keyCode == 9)
-							$this
-								.select();
-
-					})
-					.triggerHandler('--init');
-
-				// Fix.
-					if (browser.name == 'ie'
-					||	browser.mobile)
-						$this
-							.css('max-height', '10em')
-							.css('overflow-y', 'auto');
+					}
 
 			});
 
-	// Menu.
-		var $menu = $('#menu');
-
-		$menu.wrapInner('<div class="inner"></div>');
-
-		$menu._locked = false;
-
-		$menu._lock = function() {
-
-			if ($menu._locked)
-				return false;
-
-			$menu._locked = true;
-
-			window.setTimeout(function() {
-				$menu._locked = false;
-			}, 350);
-
-			return true;
-
-		};
-
-		$menu._show = function() {
-
-			if ($menu._lock())
-				$body.addClass('is-menu-visible');
-
-		};
-
-		$menu._hide = function() {
-
-			if ($menu._lock())
-				$body.removeClass('is-menu-visible');
-
-		};
-
-		$menu._toggle = function() {
-
-			if ($menu._lock())
-				$body.toggleClass('is-menu-visible');
-
-		};
-
-		$menu
-			.appendTo($body)
-			.on('click', function(event) {
-				event.stopPropagation();
-			})
-			.on('click', 'a', function(event) {
-
-				var href = $(this).attr('href');
-
-				event.preventDefault();
-				event.stopPropagation();
-
-				// Hide.
-					$menu._hide();
-
-				// Redirect.
-					if (href == '#menu')
-						return;
-
-					window.setTimeout(function() {
-						window.location.href = href;
-					}, 350);
-
-			})
-			.append('<a class="close" href="#menu">Close</a>');
-
-		$body
-			.on('click', 'a[href="#menu"]', function(event) {
-
-				event.stopPropagation();
-				event.preventDefault();
-
-				// Toggle.
-					$menu._toggle();
-
-			})
-			.on('click', function(event) {
-
-				// Hide.
-					$menu._hide();
-
-			})
+		$search_input
 			.on('keydown', function(event) {
 
-				// Hide on escape.
-					if (event.keyCode == 27)
-						$menu._hide();
+				if (event.keyCode == 27)
+					$search_input.blur();
 
+			})
+			.on('blur', function() {
+				window.setTimeout(function() {
+					$search.removeClass('visible');
+				}, 100);
+			});
+
+	// Intro.
+		var $intro = $('#intro');
+
+		// Move to main on <=large, back to sidebar on >large.
+			breakpoints.on('<=large', function() {
+				$intro.prependTo($main);
+			});
+
+			breakpoints.on('>large', function() {
+				$intro.prependTo($sidebar);
 			});
 
 })(jQuery);
