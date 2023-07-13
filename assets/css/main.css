@@ -3544,7 +3544,7 @@ input, select, textarea {
 		vertical-align: bottom;
 		position: absolute;
 		bottom: 0px;
-		left: 0px;
+		left: 10px;
 	}
 
 	body.single #footer {
