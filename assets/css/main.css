@@ -3542,6 +3542,9 @@ input, select, textarea {
 		letter-spacing: 0.25em;
 		text-transform: uppercase;
 		vertical-align: bottom;
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
 	}
 
 	body.single #footer {
