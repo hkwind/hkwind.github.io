@@ -1,96 +1,960 @@
-<!DOCTYPE HTML>
-<!--
-	Future Imperfect by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>James' Blog</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">James' Blog</a></h1>
-						<nav class="links">
-							<ul>
-								<li><a href="about.html">About Me</a></li>
-								<li><a href="post.html">Blog Post</a></li>
-								<li><a href="human.html">Human Figure Tools</a></li>
-							</ul>
-						</nav>
-						<nav class="main">
-							<ul>
-								</li>
-								<li class="menu">
-									<a class="fa-bars" href="#menu">Menu</a>
-								</li>
-							</ul>
-						</nav>
-					</header>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nolan - Personal Portfolio</title>
 
-				<!-- Menu -->
-					<section id="menu">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./img/logo.ico" type="img/n-icon">
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- #MAIN -->
+
+  <main>
+
+    <!-- #SIDEBAR -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <!-- <figure class="avatar-box">
+          <img src="./img/nolan-avatar.png" alt="Nolan Lwin" width="80">
+        </figure> -->
+
+        <figure class="avatar-box">
+          <img class="nolan-avatar" src="./img/nolan-avatar.gif" alt="Nolan Lwin">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Nolan Lwin">Nolan Lwin</h1>
+
+          <p class="title">Undergraduate Student</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto: nl020@bucknell.edu" class="contact-link">nl020@bucknell.edu</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel: +1 (272) 788-0307" class="contact-link">+1 (272) 788-0307</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Lewisburg, Pennsylvania, United States</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+          <ul class="social-list">
+
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/naing-oo-lwin-nolan/" class="social-link" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://www.github.com/i-am-nolan25" class="social-link" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://www.facebook.com/i.am.nolan25" class="social-link" target="_blank">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://www.instagram.com/i_am_nolan25/" class="social-link" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://twitter.com/NolanOlson25" class="social-link" target="_blank">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+
+          </ul>
+
+      </div>
+
+    </aside>
 
 
-						<!-- Links -->
-							<section>
-								<ul class="links">
-									<li><a href="index.html"><h3>Home</h3></a></li>
-									<li><a href="about.html"><h3>About Me</h3></a></li>
-									<li><a href="post.html"><h3>Blog Post</h3></a></li>
-                                    <li><a href="human.html"><h3>Human Figure Tools</h3></a></li>
-								</ul>
-							</section>
+    <!-- #main-content -->
 
-						
+    <div class="main-content">
 
-					</section>
+      <!-- #NAVBAR -->
 
-				
+      <nav class="navbar">
 
-				<!-- Sidebar -->
-                <section id="Main">
-					<section id="Centermain">
+        <ul class="navbar-list">
 
-						<!-- Intro -->
-							<section id="intro">
-								<header>
-                                    <p>Don't be afraid to</p>
-									<h2>"Seek Discomfort"</h2>
-									
-                                    
-                                    <h3>Welcome to James Chong's blog! Navigate from above~~</h3>
-								</header>
-							</section>
-					</section>
-                
-                    
-                </section>
-			</div>
-			<!-- Footer -->
-			<section id="footer">
-				<!-- <ul class="icons">
-					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
-					<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-				</ul> -->
-				<p class="copyright">&copy; James' Blog. Design: <a href="http://html5up.net">HTML5 UP</a></p>
-			</section>
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Nolan</button>
+          </li>
 
-	</body>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Project</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!-- #Nolan -->
+
+      <article class="nolan active" data-page="nolan">
+
+        <header>
+          <h2 class="h2 article-title">I'm Nolan.</h2>
+        </header>
+
+        <!-- introduction -->
+
+        <section class="nolan-text">
+          <p>
+            Welcome to my portfolio website! My name is Nolan Lwin, and I am thrilled to have you here. Allow me to introduce myself and share a glimpse into my professional journey.
+          </p>
+
+          <p>
+            I am a passionate software engineer with a keen interest in artificial intelligence, tech consulting, and entrepreneurship. My journey in the world of technology has been driven by a desire to create innovative solutions that have a positive impact. With a strong foundation in software development and a love for emerging technologies, I am dedicated to pushing the boundaries of what is possible. Join me as we explore my projects and delve into the exciting realm of software engineering and its intersection with AI, tech consulting, and entrepreneurship. Let's embark on this journey together!
+          </p>
+        </section>
+
+
+        <!-- service -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./img/icon-app.svg" alt="Mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Application Development</h4>
+
+                <p class="service-item-text">
+                  Craft bespoke, scalable applications tailored to your unique requirements, ensuring seamless functionality across platforms.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./img/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Website Development</h4>
+
+                <p class="service-item-text">
+                  Build dynamic, responsive websites that blend captivating design with robust functionality, establishing your brand's online presence.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./img/icon-ai.svg" alt="camera icon" width="45">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Artificial Intelligence</h4>
+
+                <p class="service-item-text">
+                  Harness the power of cutting-edge AI algorithms to transform your business operations and unlock valuable insights.
+                </p>
+              </div>
+
+            </li>
+
+            <!-- <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./img/icon-design.svg" alt="Design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UI/UX Design</h4>
+
+                <p class="service-item-text">
+                  Create visually stunning and intuitive user experiences that captivate your audience and enhance engagement with your digital products.
+                </p>
+              </div>
+
+            </li> -->
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./img/icon-consulting.svg" alt="Tech consulting icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Technology Consulting</h4>
+
+                <p class="service-item-text">
+                  Leverage expertise in technology and industry trends to provide strategic guidance and innovative solutions that drive your business forward.
+                </p>
+              </div>
+
+            </li>
+
+            <!-- <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./img/icon-marketing.svg" alt="Digital marketing icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Digital Marketing</h4>
+
+                <p class="service-item-text">
+                  Boost brand reach and engagement through targeted, data-driven social media campaigns that connect with your audience on relevant platforms.
+                </p>
+              </div>
+
+            </li> -->
+
+          </ul>
+
+        </section>
+
+        <!-- what's next -->
+
+        <section>
+
+          <h3 class="h3 next-title">What's Next?</h3><br>
+          <p class="next-subtitle">Let's work together.</p>
+
+          <p class="next-text">
+            I am currently seeking internship opportunities for Summer 2025. If you are interested in working with me, please feel free to reach out to me via <a class="email-link" href="mailto:nl020@bucknell.edu" target="_blank" style="display: inline">email</a> or <a class="linkedin-link" href="https://www.linkedin.com/in/naing-oo-lwin-nolan/" target="_blank">LinkedIn</a>. You can also drop me a message via the<a class="navbar-link" data-nav-link style="display:inline">Contact</a> page. I look forward to hearing from you!
+          </p>
+
+        </section>
+
+      </article>
+
+      <!-- #About -->
+      <article class="about" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">So, who am I?</h2>
+        </header>
+
+        <!-- detailed introduction -->
+        
+        <section class="intro">
+
+          <div class="intro-name">
+            <p class="fullname">
+              Nolan Lwin
+            </p>
+          </div>
+
+          <div class="name-pronunciation">
+            <p class="pronounced-as">
+              (Pronounced as Noh-lun Luh-win)
+            </p>
+          </div>
+
+          <div class="intro-pronunciation">
+              <audio class="pronunciation-audio" src="./audio/nolan-lwin-pronunciation.m4a" alt="Pronunciation of Naing Oo Lwin"></audio>
+              <ion-icon class="audio-icon" name="volume-high-outline"></ion-icon>
+            </a>
+          </div>
+
+        </section>
+
+        <!-- Nolan's photo, introduction, passions, and hobbies -->
+
+        <section class="photo-and-intro-details">
+
+          <div class="intro-photo">
+            <img class="nolan-photo" src="./img/nolan-lwin.png" alt="Nolan Lwin">
+          </div>
+
+          <div class="intro-text">
+            <p>
+              Greetings and a warm welcome to my corner of the internet! I am delighted to have you here, and I am thrilled to share a glimpse into my journey and passion with you. 👋
+            </p><br>
+
+            <p>
+              My name is <span class="nolan-name">Nolan Lwin</span>. I am currently a computer science major with a minor in business analytics. As an aspiring software engineer, my heart beats for the world of technology and its transformative power. From a young age, I found myself captivated by the wonders of artificial intelligence, and this fascination has only grown stronger as I've ventured further into my studies. 🤖
+            </p><br>
+
+            <p>
+              But my interests don't end there. I am equally drawn to the realms of tech consulting and entrepreneurship. The prospect of developing innovative solutions and guiding businesses towards success fills me with an unstoppable drive. To me, each venture is an opportunity to contribute to positive change, to push the limits of what we can achieve with technology.
+            </p><br>
+
+            <p>
+              In my professional journey, I have been cultivating a strong foundation in software development while keeping a watchful eye on emerging technologies. I believe that combining technical expertise with a flair for innovation is the key to making a lasting impact in our ever-evolving world.
+            </p><br>
+
+            <p>
+              Beyond the academic and professional frontiers, I also find immense joy in exploring the world. Traveling ignites my curiosity, opens my mind to new perspectives, and fuels my creativity 🏖 . When I'm not immersed in code or building business concepts, you can find me experimenting in the kitchen 🥘 , expressing myself through music 🎵 , and cherishing precious moments with friends 🍻 . Oh, and I'm quite the mobile photography enthusiast, capturing life's beautiful moments one snap at a time! 📸
+            </p><br>
+
+            <p>
+              I hope this portfolio inspires you to join me on this exhilarating journey of discovery and growth. Together, let's celebrate the endless possibilities that await in the realm of technology, entrepreneurship, and beyond. So, once again, welcome to my portfolio, and let's make this experience one to remember!
+            </p><br>
+          </div>
+
+        </section>
+
+        <header>
+          <h3 class="h3 next-title">Follow Me on Instagram</h3><br>
+        </header>
+
+        <!-- instagram profile -->
+
+        <section class="instagram-profile">
+
+          <div class="username-and-logo">
+            <img class="nolan-logo" src="./img/nolan-profile.jpg" alt="Nolan's Logo">
+
+            <p class="username">Nolan Lwin</p>
+
+            <img class="bluemark" src="./img/bluemark.png" alt="bluemark">
+          </div>
+
+          <a class="follow-button" href="https://www.instagram.com/i_am_nolan25/" alt="Instagram Profile Link" target="_blank"> 
+            <span class="icon"><svg height="33" viewBox="0 0 128 128" width="33" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a" gradientTransform="matrix(1 0 0 -1 594 633)" gradientUnits="userSpaceOnUse" x1="-566.711" x2="-493.288" y1="516.569" y2="621.43"><stop offset="0" stop-color="#ffb900"></stop><stop offset="1" stop-color="#9100eb"></stop></linearGradient><circle cx="64" cy="64" fill="url(#a)" r="64"></circle><g fill="#fff"><path d="m82.333 104h-36.666c-11.947 0-21.667-9.719-21.667-21.667v-36.666c0-11.948 9.72-21.667 21.667-21.667h36.666c11.948 0 21.667 9.719 21.667 21.667v36.667c0 11.947-9.719 21.666-21.667 21.666zm-36.666-73.333c-8.271 0-15 6.729-15 15v36.667c0 8.271 6.729 15 15 15h36.666c8.271 0 15-6.729 15-15v-36.667c0-8.271-6.729-15-15-15z"></path><path d="m64 84c-11.028 0-20-8.973-20-20 0-11.029 8.972-20 20-20s20 8.971 20 20c0 11.027-8.972 20-20 20zm0-33.333c-7.352 0-13.333 5.981-13.333 13.333 0 7.353 5.981 13.333 13.333 13.333s13.333-5.98 13.333-13.333c0-7.352-5.98-13.333-13.333-13.333z"></path><circle cx="85.25" cy="42.75" r="4.583"></circle></g></svg></span>
+            <span class="text1">Follow me</span>
+            <span class="text2">1K Followers</span> 
+          </a>
+
+        </section>
+
+        <!-- instagram photos -->
+        <!-- Note: As the Instagram Basic Display API doesn't fully support to fetch, filter, and sort photos from my professional Instagram account (which means it generates unspecified photos that cannot be sorted and filtered), I manually added some photos, linked them with my actual Instagram post, and blended them with some photos that I could fetch from using an API. -->
+
+        <section class="instagram">
+
+          <div class="uploaded-instagram-photos">
+            <a href="https://www.instagram.com/p/CuDl00aOy2a/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">
+              <img src="./img/nolan-1.jpg" alt="Nolan at Grand Canyon, Arizona">
+            </a>
+            <a href="https://www.instagram.com/p/Cs2YILPO6v4/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">
+              <img src="./img/nolan-2.jpg" alt="Nolan at Universal Studio Japan">
+            </a>
+            <a href="https://www.instagram.com/p/Ckli1dbuqgP/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">
+              <img src="./img/nolan-3.jpg" alt="Nolan at Times Square, New York">
+            </a>
+            <a href="https://www.instagram.com/p/CsaD36nv66o/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">
+              <img src="./img/nolan-4.jpg" alt="Nolan at Fushimi Inari Shrine, Kyoto">
+            </a>
+            <a href="https://www.instagram.com/p/CpJyRHIuAQX/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">
+              <img src="./img/nolan-5.png" alt="Nolan at Montage Mountain, Pennsylvania">
+            </a>
+            <a href="https://www.instagram.com/p/Cp3uhziOOpV/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">
+              <img src="./img/nolan-6.jpg" alt="Nolan at Space Needle, Seattle">
+            </a>
+            <a href="https://www.instagram.com/p/Cr9t8lQOnb4/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">
+              <img src="./img/nolan-7.jpg" alt="Nolan at TEDx Bucknell University">
+            </a>
+            <a href="https://www.instagram.com/p/CjO-sHQulCy/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">
+              <img src="./img/nolan-8.jpg" alt="Nolan at Worlds End State Park, Pennsylvania">
+            </a>
+            <a href="https://www.instagram.com/p/Cp9PWTeMgnK/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">
+              <img src="./img/nolan-9.jpg" alt="Nolan at Microsoft Redmond Woods Campus, Seattle">
+            </a>
+          </div>
+
+          <!-- <div class="instagram-feed" id="instagram-feed">
+
+          </div> -->
+
+        </section>
+
+      </article>
+
+      
+      <!-- #RESUME -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bucknell University</h4>
+
+              <p class="timeline-text">
+                Bachelor of Science, Major in Computer Science and Minor in Business Analytics
+              </p>
+
+              <span>Aug 2022 - May 2026</span>
+
+              <p class="achievement-list">
+                <ol class="achievement-item">
+                  <li class="scholarships">• Dean's Scholar, Global Scholar, Michael & Lillian Fremont Scholar, Dean's List</li>
+
+                  <li class="conferences">• CodePath ’24, Tapia Conference ’23, Harvard Conference ’24, MIT Startup Conference ’24, PyCon ’24</li>
+
+                  <li class="organizations">• President of Google Developer Student Club (GDSC), Vice-president of Society for Asian Scientists & Engineers (SASE), Postman Student Leader, President of Burmese Cultural Organization (BCO), Former President of Bucknell Consulting Group (BCG)</li>
+                </ol>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Technology Product Developer Intern</h4>
+
+              <p class="employer">
+                <a href="https://www.stifel.com" target="_blank" class="employer-name">Stifel Financial Corp. (Internship)</a>
+              </p>
+
+              <span>May 2024 — Aug 2024</span>
+
+              <p class="timeline-text">
+                <ol class="job-description">
+                  <li>• Built SharePoint site documenting Stifel's main products creating 8+ high-level process flows</li>
+
+                  <li>• Managed Wealth Management CRM platform with Salesforce Lightning, Visualforce, and Apex programming</li>
+
+                  <li>• Pursued Salesforce Platform Developer I Credential throughout the 12-week internship period</li>
+
+                  <li>• Tested in-house WealthSalesforce.API using Azure DevOps for CI/CD, supporting 200,000+ branch users</li>
+
+                </ol>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Machine Learning Research Intern</h4>
+
+              <p class="employer">
+                <a href="https://www.geisinger.org" target="_blank" class="employer-name">Geisinger Health (Internship)</a>
+              </p>
+
+              <span>Apr 2023 — Aug 2023</span>
+
+              <p class="timeline-text">
+                <ol class="job-description">
+                  <li>• Trained an advanced machine learning model utilizing computer vision for determining Bell’s Palsy severity</li>
+
+                  <li>• Improved accuracy by 7%, significantly enhancing diagnosis and recovery tracking for Geisinger Hospitals’ patients</li>
+
+                  <li>• Leveraged a suite of Python tools, such as, Pandas, Matplotlib, OpenCV, NumPy, SciPy, Scikit-Learn, Dlib</li>
+
+                  <li>• Presented groundbreaking research at 3 conferences, securing a prestigious research poster award</li>
+                </ol>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Quality Assurance Intern</h4>
+
+              <p class="employer">
+                <a href="https://www.stratagile.com/" target="_blank" class="employer-name">StratAgile (Internship)</a>
+              </p>
+
+              <span>Jun 2022 - Aug 2022</span>
+
+              <p class="timeline-text">
+                <ol class="job-description">
+                  <li>• Executed User Acceptance Testing and Quality Assurance procedures, reducing post-launch issues by 20%</li>
+
+                  <li>• Partnered with development teams across 5 SEA countries, ensuring high-quality software delivery</li>
+
+                  <li>• Monitored QA metrics, achieving a 1.5x reduction in defect densities and a decrease in open defect counts</li>
+                </ol>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">E-commerce Operations Intern</h4>
+
+              <p class="employer-list">
+                <a href="https://www.daraz.pk/about-us/" target="_blank" class="employer-name">Daraz Myanmar (Internship)</a>
+              </p>
+
+              <span>Mar 2022 - Jun 2022</span>
+
+              <p class="timeline-text">
+                <ol class="job-description">
+                  <li>• Assisted the local production team with the catalogue improvement in terms of quantity and quality</li>
+
+                  <li>• Managed the Shop App MM's Admin Seller Center (ASC) by importing SKUs on the e-commerce platform and retrieving rejected SKUs for quality control</li>
+
+                  <li>• Hunted assortments for new sellers by collaborating with the acquisition agents and accelerating the sellers' product development</li>
+                </ol>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Certifications</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Entrepreneurship Specialization</h4>
+
+              <p class="issuing-organization">
+                <a href="https://online.wharton.upenn.edu/" target="_blank" class="issuing-organization-name">Wharton Online</a>
+              </p>
+
+              <p class="issued-date">
+                Issued Jul 2023
+              </p>
+
+              <a class="credential" href="https://www.coursera.org/account/accomplishments/specialization/certificate/GCKBS49BAPTT">
+                <p class="credential-text">See Credential</p>
+                <ion-icon name="share-outline"></ion-icon>
+              </a>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">100-101: Meta Certified Digital Marketing Associate</h4>
+
+              <p class="issuing-organization">
+                <a href="https://about.meta.com/" target="_blank" class="issuing-organization-name">Meta</a>
+              </p>
+
+              <p class="issued-date">
+                Issued Jan 2022
+              </p>
+
+              <a class="credential" href="https://www.credly.com/badges/17ddd3cf-5c1d-4627-a124-c5cb2c042754?source=linked_in_profile">
+                <p class="credential-text">See Credential</p>
+                <ion-icon name="share-outline"></ion-icon>
+              </a>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="download-button">
+
+            <div class="download-resume-button">
+                <a href="./documents/Nolan_Lwin_s_Resume.pdf" alt="Download Nolan Lwin's Resume" download="Nolan Lwin's Resume.pdf" class="btn btn-download">
+                  <div class="download-resume-text">Download My Full Resume as PDF</div>
+                </a>
+            </div>
+
+          <div class="separator"></div>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Programming</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Software Development</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Website Development</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">UI/UX</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Machine Learning</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!-- #PROJECT -->
+
+      <article class="project" data-page="project">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web Development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>UI/UX</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Machine Learning</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web Devlopment</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>UI/UX</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Machine Learning</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="Technical Documentation">
+              <a href="https://stifel.sharepoint.com/sites/TechProdDevelop">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./img/docuflow.png" alt="Stifel SharePoint Site" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Stifel DocuFlow</h3>
+
+                <p class="project-category">Technical Documentation</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Web Development">
+              <a href="./projects/tedx-bucknell-web-dev/tedxbucknell_web_dev.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./img/project-1.png" alt="TEDx Bucknell University (Web Development)" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">TEDx Bucknell University</h3>
+
+                <p class="project-category">Web Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="UI/UX">
+              <a href="./projects/tedx-bucknell-prototype/tedxbucknell_prototype.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./img/project-2.png" alt="TEDx Bucknell University (UI/UX)" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">TEDx Bucknell University</h3>
+
+                <p class="project-category">UI/UX</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Machine Learning">
+              <a href="./projects/bp-ml-research/bp_ml_research.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./img/project-3.png" alt="Bell's Palsy Machine Learning Research" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Bell's Palsy Research</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!-- #CONTACT -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Let's talk.</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3013.2194036361548!2d-76.88765082331803!3d40.95477217135807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89cf13bc7ce64edd%3A0xf36ccf363eb9e9f9!2sBucknell%20University!5e0!3m2!1sen!2sus!4v1689324190088!5m2!1sen!2sus" 
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://formspree.io/f/moqoqgpv" method="POST">
+  
+            <div class="input-wrapper">
+              <input type="name" id="name" name="fullname" class="form-input" placeholder="Full name" required>
+
+              <input type="email" id="email" name="email" class="form-input" placeholder="Email address" required>
+            </div>
+
+            <textarea id="message" name="message" class="form-input" placeholder="Your Message" required></textarea>
+            
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+  <!-- custom js link -->
+  <script src="./javascript/script.js"></script>
+  <script src="./javascript/server.js"></script>
+  <script src="./dist/bundle.js"></script>
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
