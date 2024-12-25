@@ -309,7 +309,7 @@ main {
   background: var(--bg-gradient-onyx);
 }
 
-.nolan-avatar { 
+.james-avatar { 
   width: 80px;
   border-radius: 20%;
  }
@@ -464,23 +464,23 @@ main {
 
 
 /*-----------------------------------*\
-  #NOLAN
+  #james
 \*-----------------------------------*/
 
 /**
 * #introduction
 */
 
-.nolan .nolan-title { margin-bottom: 15px; }
+.james .james-title { margin-bottom: 15px; }
 
-.nolan-text {
+.james-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
 
-.nolan-text p { margin-bottom: 15px; }
+.james-text p { margin-bottom: 15px; }
 
 
 /**
@@ -621,7 +621,7 @@ main {
 }
 
 /**
- * Nolan's photo, introduction, passions, and hobbies
+ * james's photo, introduction, passions, and hobbies
  */
 
 .intro-photo  {
@@ -631,13 +631,13 @@ main {
   border-radius: 15px;
 }
 
-.nolan-photo  {
+.james-photo  {
   width: 100%;
   margin-bottom: 20px;
   border-radius: 15px;
 }
 
-.nolan-name {
+.james-name {
   color: var(--blue);
   font-size: var(--fs-4);
   font-weight: var(--fw-600);
@@ -669,7 +669,7 @@ main {
   align-items: center;
 }
 
-.nolan-logo {
+.james-logo {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -1382,7 +1382,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     border-radius: 30px; 
   }
 
-  .nolan-avatar { width: 120px; }
+  .james-avatar { width: 120px; }
 
   .info-content .name { margin-bottom: 15px; }
 
@@ -1427,12 +1427,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #NOLAN
+   * #james
    */
 
-  .nolan .article-title { margin-bottom: 20px; }
+  .james .article-title { margin-bottom: 20px; }
 
-  .nolan-text { margin-bottom: 40px; }
+  .james-text { margin-bottom: 40px; }
 
   /* service */
 
@@ -1658,7 +1658,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * NOLAN
+   * james
    */
 
   /* service */
@@ -1753,7 +1753,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { flex-direction: column; }
 
-  .nolan-avatar { width: 150px; }
+  .james-avatar { width: 150px; }
 
   .info-content .name {
     white-space: nowrap;
