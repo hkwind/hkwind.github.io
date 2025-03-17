@@ -190,88 +190,88 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 
-// introduction audio
-audioIcon.addEventListener("click", () => {
-  console.log("Audio Icon Clicked");
-  if (audioElement.paused) {
-    console.log("Audio Play");
-    audioElement.play();
-  } else {
-    console.log("Audio Pause");
-    audioElement.pause();
-  }
-});
+// // introduction audio
+// audioIcon.addEventListener("click", () => {
+//   console.log("Audio Icon Clicked");
+//   if (audioElement.paused) {
+//     console.log("Audio Play");
+//     audioElement.play();
+//   } else {
+//     console.log("Audio Pause");
+//     audioElement.pause();
+//   }
+// });
 
 
-// Instagram Basic Display API
+// // Instagram Basic Display API
 
-//Generate access token using meta for developers
-const accessToken = process.env.ACCESS_TOKEN;
+// //Generate access token using meta for developers
+// const accessToken = process.env.ACCESS_TOKEN;
 
-//Generate user id using "https://graph.instagram.com/me?fields=id,username&access_token="
-const userId = process.env.USER_ID;
+// //Generate user id using "https://graph.instagram.com/me?fields=id,username&access_token="
+// const userId = process.env.USER_ID;
 
-const instagramFeed = document.getElementById('instagram-feed');
+// const instagramFeed = document.getElementById('instagram-feed');
 
-// Function to fetch media for a given URL
-async function fetchMedia(url) {
-  const response = await fetch(url);
-  const data = await response.json();
-  return data;
-}
+// // Function to fetch media for a given URL
+// async function fetchMedia(url) {
+//   const response = await fetch(url);
+//   const data = await response.json();
+//   return data;
+// }
 
-// Fetch a specific number of media items from the user's Instagram feed using custom batching
-async function fetchInstagramMediaWithLimit(desiredLimit) {
-  const batchLimit = 100; // Number of media items to fetch in each batch
-  let allMedia = [];
-  let nextPageURL = null;
+// // Fetch a specific number of media items from the user's Instagram feed using custom batching
+// async function fetchInstagramMediaWithLimit(desiredLimit) {
+//   const batchLimit = 100; // Number of media items to fetch in each batch
+//   let allMedia = [];
+//   let nextPageURL = null;
 
-  while (allMedia.length < desiredLimit) {
-    const batchURL = nextPageURL
-      ? nextPageURL
-      : `https://graph.instagram.com/${userId}/media?fields=id,media_type,media_url,permalink,timestamp,caption&access_token=${accessToken}&limit=${batchLimit}`;
+//   while (allMedia.length < desiredLimit) {
+//     const batchURL = nextPageURL
+//       ? nextPageURL
+//       : `https://graph.instagram.com/${userId}/media?fields=id,media_type,media_url,permalink,timestamp,caption&access_token=${accessToken}&limit=${batchLimit}`;
 
-    const { data, paging } = await fetchMedia(batchURL);
+//     const { data, paging } = await fetchMedia(batchURL);
 
-    // Filter media items based on the presence of a specific hashtag in the caption text
-    const filteredMedia = data.filter(item => item.caption && item.caption.includes('#nolan'));
+//     // Filter media items based on the presence of a specific hashtag in the caption text
+//     const filteredMedia = data.filter(item => item.caption && item.caption.includes('#nolan'));
 
-    allMedia.push(...filteredMedia);
-    nextPageURL = paging?.next;
+//     allMedia.push(...filteredMedia);
+//     nextPageURL = paging?.next;
 
-    if (!nextPageURL) break; // Exit the loop if there are no more pages
-  }
+//     if (!nextPageURL) break; // Exit the loop if there are no more pages
+//   }
 
-  // Sort media items by timestamp in descending order (most recent first)
-  allMedia.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+//   // Sort media items by timestamp in descending order (most recent first)
+//   allMedia.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
 
-  return allMedia.slice(0, desiredLimit); // Return only the desired number of media items
-}
+//   return allMedia.slice(0, desiredLimit); // Return only the desired number of media items
+// }
 
-// Process the retrieved data and generate HTML for the feed
-function generateFeedHTML(media) {
-  let html = '<div class="grid">';
-  media.forEach(post => {
-    if (post.media_type === 'IMAGE') {
-      html += `
-        <a href="${post.permalink}" target="_blank" rel="noopener">
-          <img src="${post.media_url}" alt="Instagram Photo">
-        </a>
-      `;
-    }
-  });
-  html += '</div>';
-  return html;
-}
+// // Process the retrieved data and generate HTML for the feed
+// function generateFeedHTML(media) {
+//   let html = '<div class="grid">';
+//   media.forEach(post => {
+//     if (post.media_type === 'IMAGE') {
+//       html += `
+//         <a href="${post.permalink}" target="_blank" rel="noopener">
+//           <img src="${post.media_url}" alt="Instagram Photo">
+//         </a>
+//       `;
+//     }
+//   });
+//   html += '</div>';
+//   return html;
+// }
 
-// Fetch the Instagram feed and display it with the desired limit
-const desiredPhotoLimit = 12; // Change this value to the desired number of photos
-fetchInstagramMediaWithLimit(desiredPhotoLimit)
-  .then(media => {
-    const html = generateFeedHTML(media);
-    instagramFeed.innerHTML = html;
-  })
-  .catch(error => {
-    console.error('Error fetching Instagram feed:', error);
-    instagramFeed.innerHTML = 'Failed to fetch Instagram feed.';
-  });
+// // Fetch the Instagram feed and display it with the desired limit
+// const desiredPhotoLimit = 12; // Change this value to the desired number of photos
+// fetchInstagramMediaWithLimit(desiredPhotoLimit)
+//   .then(media => {
+//     const html = generateFeedHTML(media);
+//     instagramFeed.innerHTML = html;
+//   })
+//   .catch(error => {
+//     console.error('Error fetching Instagram feed:', error);
+//     instagramFeed.innerHTML = 'Failed to fetch Instagram feed.';
+//   });
