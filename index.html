@@ -137,13 +137,13 @@
             </div>
             <h3>PairNest</h3>
             <p class="featured-project__summary">
-              A calm shared space for two people to coordinate the little things: plans, tasks, and shared spending.
-              Built here as a front-end concept with sample data only — no account, no database.
+              A private shared workspace for couples: wishlists, future goals, a combined calendar, and the memories that follow.
+              This portfolio version is a front-end walkthrough with fictional data only — no account or database.
             </p>
             <ul class="tag-list" aria-label="PairNest project tags">
-              <li>Product thinking</li>
-              <li>UX concept</li>
-              <li>Static prototype</li>
+              <li>Next.js × TypeScript</li>
+              <li>Couple workspace</li>
+              <li>Static walkthrough</li>
             </ul>
             <a class="button button--light" href="./projects/pairnest/index.html">Open the PairNest mockup <span aria-hidden="true">↗</span></a>
           </div>
@@ -154,28 +154,28 @@
               <span class="pairnest-teaser__avatar">J</span>
             </div>
             <div class="pairnest-teaser__greeting">
-              <span>Thursday, 7 August</span>
-              <strong>Good evening, James.</strong>
+              <span>Alex &amp; Jamie’s space</span>
+              <strong>Everything you’re looking forward to.</strong>
             </div>
             <div class="pairnest-teaser__split">
               <div class="teaser-card teaser-card--lavender">
-                <span class="teaser-card__eyebrow">Up next</span>
-                <strong>Book dinner<br />for Friday</strong>
-                <small>with Mia · 7:30 pm</small>
+                <span class="teaser-card__eyebrow">Wishlist</span>
+                <strong>Kyoto autumn<br />trip</strong>
+                <small>Travel · saved together</small>
               </div>
               <div class="teaser-card teaser-card--green">
-                <span class="teaser-card__eyebrow">This week</span>
-                <strong>3 of 5</strong>
-                <small>little things done</small>
+                <span class="teaser-card__eyebrow">Future goals</span>
+                <strong>35%</strong>
+                <small>shared travel fund</small>
               </div>
             </div>
             <div class="pairnest-teaser__list">
-              <span class="teaser-check" aria-hidden="true">✓</span><span>Set the weekend plan</span><span class="teaser-time">Done</span>
+              <span class="teaser-check" aria-hidden="true">✓</span><span>Friday dinner hold</span><span class="teaser-time">Calendar</span>
             </div>
             <div class="pairnest-teaser__list">
-              <span class="teaser-check teaser-check--empty" aria-hidden="true"></span><span>Pick up the laundry</span><span class="teaser-time">Tomorrow</span>
+              <span class="teaser-check teaser-check--empty" aria-hidden="true"></span><span>Add a memory</span><span class="teaser-time">After the day</span>
             </div>
-            <div class="pairnest-teaser__nav"><span class="is-active">Today</span><span>Shared</span><span>Plans</span></div>
+            <div class="pairnest-teaser__nav"><span class="is-active">Home</span><span>Wishlist</span><span>Calendar</span></div>
             <span class="pairnest-teaser__orbit pairnest-teaser__orbit--one" aria-hidden="true"></span>
             <span class="pairnest-teaser__orbit pairnest-teaser__orbit--two" aria-hidden="true"></span>
           </a>
@@ -214,9 +214,9 @@
         <div class="section-shell pairnest-section__inner">
           <div class="pairnest-section__intro reveal">
             <p class="section-kicker section-kicker--light">/ 03 — PairNest walkthrough</p>
-            <h2 id="pairnest-title">A little prototype for a more coordinated everyday.</h2>
+            <h2 id="pairnest-title">A shared space for the things a couple is building together.</h2>
             <p>
-              This browser-only mockup makes the core idea tangible. Try switching views or ticking off a task — it is intentionally seeded with fictional sample data and stores nothing.
+              PairNest brings wishlists, future goals, calendars, and memories into one private workspace. This browser-only portfolio walkthrough is seeded with fictional data and stores nothing.
             </p>
             <a class="button button--outline" href="./projects/pairnest/index.html">Explore the full demo <span aria-hidden="true">↗</span></a>
           </div>
@@ -230,36 +230,44 @@
             <div class="mini-demo__app">
               <aside class="mini-demo__sidebar">
                 <a class="mini-demo__logo" href="#pairnest">pair<span>nest</span></a>
-                <button class="mini-demo__nav is-active" type="button" data-pairnest-view="today">Today</button>
-                <button class="mini-demo__nav" type="button" data-pairnest-view="shared">Shared</button>
-                <button class="mini-demo__nav" type="button" data-pairnest-view="plans">Plans</button>
+                <button class="mini-demo__nav is-active" type="button" data-pairnest-view="home">Home</button>
+                <button class="mini-demo__nav" type="button" data-pairnest-view="wishlist">Wishlist</button>
+                <button class="mini-demo__nav" type="button" data-pairnest-view="goals">Future goals</button>
+                <button class="mini-demo__nav" type="button" data-pairnest-view="calendar">Calendar</button>
                 <span class="mini-demo__side-note">For two,<br />not for feeds.</span>
               </aside>
               <div class="mini-demo__content">
                 <div class="mini-demo__topline"><span>James &amp; Mia</span><span class="mini-demo__avatar">JM</span></div>
 
-                <section class="mini-demo__panel is-active" data-pairnest-panel="today" aria-label="PairNest today view">
-                  <p class="mini-demo__eyebrow">Thursday · 7 August</p>
-                  <h3>A steady little day.</h3>
-                  <div class="mini-demo__highlight"><span>Tonight</span><strong>Cook something new</strong><small>6:30 pm · at home</small></div>
-                  <div class="mini-demo__subhead"><span>Shared to-dos</span><span>2 left</span></div>
-                  <button class="mini-demo__task" type="button" data-demo-task><span class="mini-demo__task-check" aria-hidden="true"></span><span>Pick up the laundry</span><small>Tomorrow</small></button>
-                  <button class="mini-demo__task" type="button" data-demo-task><span class="mini-demo__task-check" aria-hidden="true"></span><span>Book dinner for Friday</span><small>7:30 pm</small></button>
+                <section class="mini-demo__panel is-active" data-pairnest-panel="home" aria-label="PairNest home view">
+                  <p class="mini-demo__eyebrow">Alex &amp; Jamie’s shared space</p>
+                  <h3>Your world, together.</h3>
+                  <div class="mini-demo__highlight"><span>Next up</span><strong>Friday dinner hold</strong><small>7:30 pm · shared calendar</small></div>
+                  <div class="mini-demo__subhead"><span>At a glance</span><span>Open a view</span></div>
+                  <button class="mini-demo__task" type="button" data-demo-task><span class="mini-demo__task-check" aria-hidden="true"></span><span>2 saved wishlist ideas</span><small>Explore</small></button>
+                  <button class="mini-demo__task" type="button" data-demo-task><span class="mini-demo__task-check" aria-hidden="true"></span><span>2 future goals in progress</span><small>Explore</small></button>
                 </section>
 
-                <section class="mini-demo__panel" data-pairnest-panel="shared" aria-label="PairNest shared view" hidden>
-                  <p class="mini-demo__eyebrow">Shared spending</p>
-                  <h3>Fair, at a glance.</h3>
-                  <div class="mini-demo__balance"><span>Settled this month</span><strong>HK$ 1,280</strong><small>Even split · no action needed</small></div>
-                  <div class="mini-demo__expense"><span>Groceries</span><small>James paid</small><strong>HK$ 486</strong></div>
-                  <div class="mini-demo__expense"><span>Home internet</span><small>Mia paid</small><strong>HK$ 398</strong></div>
+                <section class="mini-demo__panel" data-pairnest-panel="wishlist" aria-label="PairNest wishlist view" hidden>
+                  <p class="mini-demo__eyebrow">Little things worth saving</p>
+                  <h3>Wishlist</h3>
+                  <div class="mini-demo__balance"><span>Saved together</span><strong>Kyoto autumn trip</strong><small>Travel · high priority</small></div>
+                  <div class="mini-demo__expense"><span>Anniversary dinner shortlist</span><small>Restaurant · added by Alex</small><strong>Saved</strong></div>
+                  <div class="mini-demo__expense"><span>One place for ideas</span><small>Filter, sort, revisit</small><strong>+</strong></div>
                 </section>
 
-                <section class="mini-demo__panel" data-pairnest-panel="plans" aria-label="PairNest plans view" hidden>
-                  <p class="mini-demo__eyebrow">The weekend</p>
-                  <h3>Small plans, held together.</h3>
-                  <div class="mini-demo__plan"><span class="mini-demo__day">SAT<br /><b>09</b></span><span><strong>Morning market</strong><small>10:00 am · Central</small></span></div>
-                  <div class="mini-demo__plan"><span class="mini-demo__day">SUN<br /><b>10</b></span><span><strong>Call the family</strong><small>5:00 pm · together</small></span></div>
+                <section class="mini-demo__panel" data-pairnest-panel="goals" aria-label="PairNest future goals view" hidden>
+                  <p class="mini-demo__eyebrow">Future goals</p>
+                  <h3>What you’re building.</h3>
+                  <div class="mini-demo__plan"><span class="mini-demo__day">35<br /><b>%</b></span><span><strong>Shared travel fund</strong><small>Finance · both</small></span></div>
+                  <div class="mini-demo__plan"><span class="mini-demo__day">10<br /><b>%</b></span><span><strong>Learn basic Japanese</strong><small>Learning · Jamie</small></span></div>
+                </section>
+
+                <section class="mini-demo__panel" data-pairnest-panel="calendar" aria-label="PairNest calendar view" hidden>
+                  <p class="mini-demo__eyebrow">One view of the calendar</p>
+                  <h3>See the overlap.</h3>
+                  <div class="mini-demo__plan"><span class="mini-demo__day">FRI<br /><b>07</b></span><span><strong>Friday dinner hold</strong><small>Shared · 7:30 pm</small></span></div>
+                  <div class="mini-demo__plan"><span class="mini-demo__day">WED<br /><b>08</b></span><span><strong>Apartment viewing</strong><small>Alex · 10:00 am</small></span></div>
                 </section>
                 <p class="mini-demo__status" role="status" aria-live="polite" data-demo-status>Prototype mode — changes stay on this page only.</p>
               </div>
