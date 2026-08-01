@@ -1,17 +1,17 @@
 {
   "name": "personal-portfolio",
   "version": "1.0.0",
-  "description": "![Nolan's Personal Portfolio Website](./img/nolan-s-portfolio-website.png)",
+  "description": "James Chong's personal portfolio and PairNest interaction prototype.",
   "main": "webpack.config.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "node scripts/build-static-site.cjs && webpack"
   },
   "keywords": [],
-  "author": "",
+  "author": "James Chong",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.22.9",

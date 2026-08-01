@@ -1,777 +1,336 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f4ee" />
+    <meta
+      name="description"
+      content="James Chong is a Hong Kong–based Analyst Programmer and systems-minded builder working across public services, data, learning, and useful digital tools."
+    />
+    <meta property="og:title" content="James Chong — Systems-minded builder" />
+    <meta
+      property="og:description"
+      content="A portfolio of work across public services, data, learning, and useful digital tools."
+    />
+    <meta property="og:type" content="website" />
+    <title>James Chong — Systems-minded builder</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio website of James</title>
+    <link rel="icon" href="./img/logo.ico" sizes="any" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-  <!-- favicon -->
-  <link rel="shortcut icon" href="./img/logo.ico" type="img/n-icon">
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <!-- custom css link -->
-  <link rel="stylesheet" href="./css/style.css">
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="James Chong home">
+        <span class="brand-mark">JC</span>
+        <span class="brand-copy">James Chong</span>
+      </a>
 
-  <!-- google font link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-navigation"
+        data-menu-toggle
+      >
+        <span class="menu-toggle__label">Menu</span>
+        <span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
 
-<body>
+      <nav class="site-navigation" id="site-navigation" aria-label="Main navigation" data-navigation>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#pairnest">PairNest</a>
+        <a href="#journey">Journey</a>
+        <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
 
-  <!-- #MAIN -->
-
-  <main>
-
-    <!-- #SIDEBAR -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <!-- <figure class="avatar-box">
-          <img src="./img/james-avatar.png" alt="james Lwin" width="80">
-        </figure> -->
-
-        <figure class="avatar-box">
-          <img class="james-avatar" src="./img/james.JPG" alt="James Chong's avatar">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="James Chong">James Chong</h1>
-
-          <p class="title">Analyst Programmer</p><p class="title">Instructional Designer</p>
+    <main id="main-content">
+      <section class="hero section-shell" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Hong Kong · Analyst Programmer · Learning-minded builder</p>
+          <h1 id="hero-title">I turn complex systems into <em>clearer</em> human experiences.</h1>
+          <p class="hero-intro">
+            I’m James — a systems-minded builder working where public services, data, and learning meet.
+            I enjoy the work between an ambiguous question and a genuinely useful answer.
+          </p>
+          <div class="hero-actions">
+            <a class="button button--dark" href="#work">See selected work <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="mailto:longshanj@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-signal">
+            <span class="signal-dot" aria-hidden="true"></span>
+            <span>Open to thoughtful collaborations and useful side projects.</span>
+          </div>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+        <div class="hero-visual reveal reveal--late" aria-label="Portrait of James Chong">
+          <div class="hero-stamp hero-stamp--top">Systems<br />× People</div>
+          <div class="portrait-frame">
+            <span class="portrait-frame__corner portrait-frame__corner--one" aria-hidden="true"></span>
+            <span class="portrait-frame__corner portrait-frame__corner--two" aria-hidden="true"></span>
+            <img src="./img/james.JPG" alt="James Chong at his City University of Hong Kong graduation" />
+            <div class="portrait-note">
+              <span class="portrait-note__index">01</span>
+              <span>Curious by default.<br />Clear by design.</span>
             </div>
+          </div>
+          <div class="hero-stamp hero-stamp--bottom">Data<br />→ Learning</div>
+        </div>
+      </section>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+      <section class="principles section-shell" id="about" aria-labelledby="about-title">
+        <div class="section-intro reveal">
+          <p class="section-kicker">/ 01 — What I bring</p>
+          <h2 id="about-title">A practical mix of systems thinking, empathy, and craft.</h2>
+        </div>
+        <div class="principles-grid">
+          <article class="principle reveal">
+            <span class="principle-number">01</span>
+            <h3>Find the real problem</h3>
+            <p>I listen closely, make the moving parts visible, and turn scattered stakeholder needs into a shared direction.</p>
+          </article>
+          <article class="principle reveal reveal--late">
+            <span class="principle-number">02</span>
+            <h3>Make the complicated usable</h3>
+            <p>From public-facing workflows to learning experiences, I care about the details that make a tool feel understandable.</p>
+          </article>
+          <article class="principle reveal reveal--later">
+            <span class="principle-number">03</span>
+            <h3>Learn in the open</h3>
+            <p>I’m always extending my practice through data, AI, instructional design, and small experiments that connect the dots.</p>
+          </article>
+        </div>
+      </section>
 
-              <a href="mailto: longshanj@gmail.com" class="contact-link">longshanj@gmail.com</a>
+      <section class="statement-band" aria-label="Professional statement">
+        <div class="statement-band__inner section-shell reveal">
+          <p>Good systems earn trust when people can understand what happens next.</p>
+          <span class="statement-band__glyph" aria-hidden="true">✦</span>
+        </div>
+      </section>
+
+      <section class="work section-shell" id="work" aria-labelledby="work-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-kicker">/ 02 — Selected work</p>
+            <h2 id="work-title">Useful, curious, and still evolving.</h2>
+          </div>
+          <p class="section-note">A few things I’ve made, shaped, or am actively exploring.</p>
+        </div>
+
+        <article class="featured-project reveal">
+          <div class="featured-project__content">
+            <div class="project-meta">
+              <span>Side project</span>
+              <span>2026</span>
             </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel: +852 63852276" class="contact-link">+852 63852276</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Hong Kong</address>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Linkedin</p>
-
-              <a href="https://www.linkedin.com/in/james-chong-1025" class="contact-link">https://www.linkedin.com/in/james-chong-1025</a>
-            </div>
-
-          </li>
-
-        </ul>
-
-       
-
-    </aside>
-
-
-    <!-- #main-content -->
-
-    <div class="main-content">
-
-      <!-- #NAVBAR -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>Main</button>
-          </li>
-
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>About</button>
-          </li> -->
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Project</button>
-          </li>
-
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li> -->
-
-        </ul>
-
-      </nav>
-
-
-      <!-- #james -->
-
-      <article class="james active" data-page="main">
-
-        <header>
-          <h2 class="h2 article-title">Who am I?</h2>
-        </header>
-
-        <!-- introduction -->
-
-        <section class="james-text">
-          <p>
-            Hi there! Welcome to my portfolio website! I'm James.
-          </p>
-
-          <p>
-            I’m a dedicated System Analyst with a passion for instructional design.  
-          </p>
-
-          <p>
-            I excel in negotiating and communicating to accurately define and understand user requirements, while my Master's in Data Science (earned with distinction) has sharpened my analytical capabilities. 
-          </p>
-
-          <p>
-            As a lifelong learner, I continuously seek opportunities to expand my knowledge and thrive in environments where I can work independently to deliver exceptional results.
-          </p>
-
-          <p>
-            And right now, I’m working toward my dream of becoming an instructional designer. Soon, I’ll be sharing some fun little projects and blogs about learning on my website—stay tuned!"
-            
-          </p>
-          
-        </section>
-
-
-        <!-- service -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">Specialized in</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./img/icon-data.svg" alt="Data Analytics icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Analytics</h4>
-
-                <p class="service-item-text">
-                  Great at preparing insights with collected data and presenting it to stakeholders with graphs and visuals.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./img/icon-discuss.svg" alt="Defining Requirements icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Requirement specification</h4>
-
-                <p class="service-item-text">
-                  Competent at articulating business problems, gathering stakeholders' concerns and turning them into solid requirements before kickstarting the project.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./img/icon-ai.svg" alt="camera icon" width="45">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Artificial Intelligence</h4>
-
-                <p class="service-item-text">
-                  Harness the power of cutting-edge AI algorithms to transform business operations and unlock valuable insights.
-                </p>
-              </div>
-
-            </li>
-
-            <!-- <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./img/icon-design.svg" alt="Design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">UI/UX Design</h4>
-
-                <p class="service-item-text">
-                  Create visually stunning and intuitive user experiences that captivate your audience and enhance engagement with your digital products.
-                </p>
-              </div>
-
-            </li> -->
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./img/icon-consulting.svg" alt="Tech consulting icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Instructional Design</h4>
-
-                <p class="service-item-text">
-                  Passionate and independent instructional designer with a proven track record in small project success.
-                </p>
-              </div>
-
-            </li>
-
-            <!-- <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./img/icon-marketing.svg" alt="Digital marketing icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Digital Marketing</h4>
-
-                <p class="service-item-text">
-                  Boost brand reach and engagement through targeted, data-driven social media campaigns that connect with your audience on relevant platforms.
-                </p>
-              </div>
-
-            </li> -->
-
-          </ul>
-
-        </section>
-
-        <!-- what's next -->
-
-        <!-- <section>
-
-          <h3 class="h3 next-title">What's Next?</h3><br>
-          <p class="next-subtitle">Let's work together.</p>
-
-          <p class="next-text">
-            Filler
-          </p>
-
-        </section> -->
-
-      </article>
-
-      <!-- #About
-      <article class="about" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">So, who am I?</h2>
-        </header> -->
-
-        <!-- detailed introduction -->
-        
-        <!-- <section class="intro">
-
-          <div class="intro-name">
-            <p class="fullname">
-              James Chong
+            <h3>PairNest</h3>
+            <p class="featured-project__summary">
+              A private shared workspace for couples: wishlists, future goals, a combined calendar, and the memories that follow.
+              This portfolio version is a front-end walkthrough with fictional data only — no account or database.
             </p>
+            <ul class="tag-list" aria-label="PairNest project tags">
+              <li>Next.js × TypeScript</li>
+              <li>Couple workspace</li>
+              <li>Static walkthrough</li>
+            </ul>
+            <a class="button button--light" href="./projects/pairnest/index.html">Open the PairNest mockup <span aria-hidden="true">↗</span></a>
           </div>
 
-        </section> -->
+          <a class="pairnest-teaser" href="./projects/pairnest/index.html" aria-label="Open the PairNest mockup">
+            <div class="pairnest-teaser__bar">
+              <span class="pairnest-logo">pair<span>nest</span></span>
+              <span class="pairnest-teaser__avatar">J</span>
+            </div>
+            <div class="pairnest-teaser__greeting">
+              <span>Alex &amp; Jamie’s space</span>
+              <strong>Everything you’re looking forward to.</strong>
+            </div>
+            <div class="pairnest-teaser__split">
+              <div class="teaser-card teaser-card--lavender">
+                <span class="teaser-card__eyebrow">Wishlist</span>
+                <strong>Kyoto autumn<br />trip</strong>
+                <small>Travel · saved together</small>
+              </div>
+              <div class="teaser-card teaser-card--green">
+                <span class="teaser-card__eyebrow">Future goals</span>
+                <strong>35%</strong>
+                <small>shared travel fund</small>
+              </div>
+            </div>
+            <div class="pairnest-teaser__list">
+              <span class="teaser-check" aria-hidden="true">✓</span><span>Friday dinner hold</span><span class="teaser-time">Calendar</span>
+            </div>
+            <div class="pairnest-teaser__list">
+              <span class="teaser-check teaser-check--empty" aria-hidden="true"></span><span>Add a memory</span><span class="teaser-time">After the day</span>
+            </div>
+            <div class="pairnest-teaser__nav"><span class="is-active">Home</span><span>Wishlist</span><span>Calendar</span></div>
+            <span class="pairnest-teaser__orbit pairnest-teaser__orbit--one" aria-hidden="true"></span>
+            <span class="pairnest-teaser__orbit pairnest-teaser__orbit--two" aria-hidden="true"></span>
+          </a>
+        </article>
 
-        <!-- james's photo, introduction, passions, and hobbies -->
-
-        <!-- <section class="photo-and-intro-details"> -->
-
-          <!-- <div class="intro-photo">
-            <img class="james-photo" src="./img/james.png" alt="james">
-          </div> -->
-
-          <!-- <div class="intro-text">
-            <p>
-              Greetings and a warm welcome to my corner of the internet! I am delighted to have you here, and I am thrilled to share a glimpse into my journey and passion with you. 👋
-            </p><br>
-
-            <p>
-              Hi there! I’m an analyst programmer based in Hong Kong, where I spend my days crunching code and solving problems. I’m passionate about learning and leveling up my skills, and right now, I’m working toward my dream of becoming an instructional designer. Soon, I’ll be sharing some fun little projects and blogs about learning on my website—stay tuned!
-            </p><br>
-
-            <p>
-              But my interests don't end there. I am equally drawn to the realms of tech consulting and entrepreneurship. The prospect of developing innovative solutions and guiding businesses towards success fills me with an unstoppable drive. To me, each venture is an opportunity to contribute to positive change, to push the limits of what we can achieve with technology.
-            </p><br>
-
-            <p>
-              In my professional journey, I have been cultivating a strong foundation in software development while keeping a watchful eye on emerging technologies. I believe that combining technical expertise with a flair for innovation is the key to making a lasting impact in our ever-evolving world.
-            </p><br>
-
-            <p>
-              Beyond the academic and professional frontiers, I also find immense joy in exploring the world. Traveling ignites my curiosity, opens my mind to new perspectives, and fuels my creativity 🏖 . When I'm not immersed in code or building business concepts, you can find me experimenting in the kitchen 🥘 , expressing myself through music 🎵 , and cherishing precious moments with friends 🍻 . Oh, and I'm quite the mobile photography enthusiast, capturing life's beautiful moments one snap at a time! 📸
-            </p><br>
-
-            <p>
-              I hope this portfolio inspires you to join me on this exhilarating journey of discovery and growth. Together, let's celebrate the endless possibilities that await in the realm of technology, entrepreneurship, and beyond. So, once again, welcome to my portfolio, and let's make this experience one to remember!
-            </p><br>
-          </div>
-
-        </section>
-
-        <header>
-          <h3 class="h3 next-title">Follow Me on Instagram</h3><br>
-        </header>
-
-        <!-- instagram profile -->
-
-        <!--<section class="instagram-profile">
-
-          <div class="username-and-logo">
-            <img class="james-logo" src="./img/james-profile.jpg" alt="james's Logo">
-
-            <p class="username">james Lwin</p>
-
-            <img class="bluemark" src="./img/bluemark.png" alt="bluemark">
-          </div>
-
-          <a class="follow-button" href="https://www.instagram.com/i_am_james25/" alt="Instagram Profile Link" target="_blank"> 
-            <span class="icon"><svg height="33" viewBox="0 0 128 128" width="33" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a" gradientTransform="matrix(1 0 0 -1 594 633)" gradientUnits="userSpaceOnUse" x1="-566.711" x2="-493.288" y1="516.569" y2="621.43"><stop offset="0" stop-color="#ffb900"></stop><stop offset="1" stop-color="#9100eb"></stop></linearGradient><circle cx="64" cy="64" fill="url(#a)" r="64"></circle><g fill="#fff"><path d="m82.333 104h-36.666c-11.947 0-21.667-9.719-21.667-21.667v-36.666c0-11.948 9.72-21.667 21.667-21.667h36.666c11.948 0 21.667 9.719 21.667 21.667v36.667c0 11.947-9.719 21.666-21.667 21.666zm-36.666-73.333c-8.271 0-15 6.729-15 15v36.667c0 8.271 6.729 15 15 15h36.666c8.271 0 15-6.729 15-15v-36.667c0-8.271-6.729-15-15-15z"></path><path d="m64 84c-11.028 0-20-8.973-20-20 0-11.029 8.972-20 20-20s20 8.971 20 20c0 11.027-8.972 20-20 20zm0-33.333c-7.352 0-13.333 5.981-13.333 13.333 0 7.353 5.981 13.333 13.333 13.333s13.333-5.98 13.333-13.333c0-7.352-5.98-13.333-13.333-13.333z"></path><circle cx="85.25" cy="42.75" r="4.583"></circle></g></svg></span>
-            <span class="text1">Follow me</span>
-            <span class="text2">1K Followers</span> 
+        <div class="project-grid">
+          <a class="project-card project-card--learning reveal" href="./projects/biology/biology_prototype.html">
+            <span class="project-card__arrow" aria-hidden="true">↗</span>
+            <div class="project-card__visual project-card__visual--learning">
+              <span>Learn</span><span>Observe</span><span>Connect</span>
+              <i></i><i></i><i></i>
+            </div>
+            <div class="project-card__footer">
+              <div><p class="project-meta">Instructional design</p><h3>Biology learning prototype</h3></div>
+              <p>A lightweight learning concept for secondary students.</p>
+            </div>
           </a>
 
-        </section> -->
+          <article class="project-card project-card--notes reveal reveal--late">
+            <div class="project-card__visual project-card__visual--notes">
+              <span class="notes-label">Working notes</span>
+              <span class="notes-line notes-line--one"></span>
+              <span class="notes-line notes-line--two"></span>
+              <span class="notes-line notes-line--three"></span>
+              <span class="notes-dot"></span>
+            </div>
+            <div class="project-card__footer">
+              <div><p class="project-meta">In progress</p><h3>Small experiments</h3></div>
+              <p>Exploring AI, data, and learning design through hands-on prototypes.</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-        <!-- instagram photos -->
-        <!-- Note: As the Instagram Basic Display API doesn't fully support to fetch, filter, and sort photos from my professional Instagram account (which means it generates unspecified photos that cannot be sorted and filtered), I manually added some photos, linked them with my actual Instagram post, and blended them with some photos that I could fetch from using an API. -->
-
-        <!-- <section class="instagram">
-
-          <div class="uploaded-instagram-photos">
-            <a href="https://www.instagram.com/p/CuDl00aOy2a/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">
-              <img src="./img/james-1.jpg" alt="james at Grand Canyon, Arizona">
-            </a>
-            <a href="https://www.instagram.com/p/Cs2YILPO6v4/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">
-              <img src="./img/james-2.jpg" alt="james at Universal Studio Japan">
-            </a>
-            <a href="https://www.instagram.com/p/Ckli1dbuqgP/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">
-              <img src="./img/james-3.jpg" alt="james at Times Square, New York">
-            </a>
-            <a href="https://www.instagram.com/p/CsaD36nv66o/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">
-              <img src="./img/james-4.jpg" alt="james at Fushimi Inari Shrine, Kyoto">
-            </a>
-            <a href="https://www.instagram.com/p/CpJyRHIuAQX/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">
-              <img src="./img/james-5.png" alt="james at Montage Mountain, Pennsylvania">
-            </a>
-            <a href="https://www.instagram.com/p/Cp3uhziOOpV/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">
-              <img src="./img/james-6.jpg" alt="james at Space Needle, Seattle">
-            </a>
-            <a href="https://www.instagram.com/p/Cr9t8lQOnb4/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">
-              <img src="./img/james-7.jpg" alt="james at TEDx Bucknell University">
-            </a>
-            <a href="https://www.instagram.com/p/CjO-sHQulCy/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">
-              <img src="./img/james-8.jpg" alt="james at Worlds End State Park, Pennsylvania">
-            </a>
-            <a href="https://www.instagram.com/p/Cp9PWTeMgnK/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">
-              <img src="./img/james-9.jpg" alt="james at Microsoft Redmond Woods Campus, Seattle">
-            </a>
+      <section class="pairnest-section" id="pairnest" aria-labelledby="pairnest-title">
+        <div class="section-shell pairnest-section__inner">
+          <div class="pairnest-section__intro reveal">
+            <p class="section-kicker section-kicker--light">/ 03 — PairNest walkthrough</p>
+            <h2 id="pairnest-title">A shared space for the things a couple is building together.</h2>
+            <p>
+              PairNest brings wishlists, future goals, calendars, and memories into one private workspace. This browser-only portfolio walkthrough is seeded with fictional data and stores nothing.
+            </p>
+            <a class="button button--outline" href="./projects/pairnest/index.html">Explore the full demo <span aria-hidden="true">↗</span></a>
           </div>
 
-          <!-- <div class="instagram-feed" id="instagram-feed">
-
-          </div> -->
-
-        <!--</section>
-
-      </article> -->
-
-      
-      <!-- #RESUME -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+          <div class="pairnest-mini-demo reveal reveal--late" data-pairnest-demo>
+            <div class="mini-demo__chrome">
+              <div class="mini-demo__dots" aria-hidden="true"><i></i><i></i><i></i></div>
+              <span>pairnest.app</span>
+              <span class="mini-demo__secure">sample mode</span>
             </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Analyst/Programmer</h4>
-
-              <p class="employer">
-                <a href="https://www.wfsfaa.gov.hk" target="_blank" class="employer-name">Working Family And Student Financial Assistance Agency, HKSAR</a>
-              </p>
-
-              <span>Dec 2021 — Present</span>
-
-              <p class="timeline-text">
-                <ol class="job-description">
-                  <li>• Defined requirements and workflows for a public facing services and admin portal according to business users' requirements</li>
-
-                  <li>• Prepared and conducted system tests, including unit test, regression test and load test for a public facing services</li>
-
-                </ol>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Developer / IT consultant</h4>
-
-              <p class="employer">
-                <a href="https://www.dynasys.com.hk" target="_blank" class="employer-name">Catalyst Solutions Limited (Subsidiary Of Dynasys Solutions Limited)</a>
-              </p>
-
-              <span>Oct 2020 — Oct 2021</span>
-
-              <p class="timeline-text">
-                <ol class="job-description">
-                  <li>• Designed and/or developed RPA programs for different companies, including Hong Kong Electric Corporation Limited and Yazaki (Hong Kong) Limited</li>
-
-                  <li>• Participated in SAP BW/BO installation and development for different companies, including Citistore (Hong Kong) Limited, Aviation Security Company Limited, etc</li>
-
-                </ol>
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">City University of Hong Kong</h4>
-
-              <p class="timeline-text">
-                Master of Science in Data Science
-              </p>
-
-              <span>Sep 2022 - Jun 2024</span>
-
-              <p class="achievement-list">
-                <ol class="achievement-item">
-                  <li class="Achievements">• Graduated with Distinction, Outstanding Research Project Award in Sem B 2022/23</li>
-                </ol>
-              </p>
-
-            </li>
-
-          
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">The Hong Kong Polytechnic University</h4>
-
-              <p class="timeline-text">
-                Bachelor of Science, Major in Computing and Minor in Psychology
-              </p>
-
-              <span>Sep 2016 - Jun 2020</span>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        
-
-        <!-- <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Certifications</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Entrepreneurship Specialization</h4>
-
-              <p class="issuing-organization">
-                <a href="https://online.wharton.upenn.edu/" target="_blank" class="issuing-organization-name">Wharton Online</a>
-              </p>
-
-              <p class="issued-date">
-                Issued Jul 2023
-              </p>
-
-              <a class="credential" href="https://www.coursera.org/account/accomplishments/specialization/certificate/GCKBS49BAPTT">
-                <p class="credential-text">See Credential</p>
-                <ion-icon name="share-outline"></ion-icon>
-              </a>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">100-101: Meta Certified Digital Marketing Associate</h4>
-
-              <p class="issuing-organization">
-                <a href="https://about.meta.com/" target="_blank" class="issuing-organization-name">Meta</a>
-              </p>
-
-              <p class="issued-date">
-                Issued Jan 2022
-              </p>
-
-              <a class="credential" href="https://www.credly.com/badges/17ddd3cf-5c1d-4627-a124-c5cb2c042754?source=linked_in_profile">
-                <p class="credential-text">See Credential</p>
-                <ion-icon name="share-outline"></ion-icon>
-              </a>
-
-            </li>
-
-          </ol>
-
-        </section> -->
-
-        <section class="download-button">
-
-            <div class="download-resume-button">
-                <a href="./documents/2025_Updated_Resume.pdf" alt="Download  Resume" download="Resume.pdf" class="btn btn-download">
-                  <div class="download-resume-text">Download My Full Resume as PDF</div>
-                </a>
-            </div>
-
-          
-
-        </section>
-
-       
-
-      </article>
-      
-      <!-- #PROJECT -->
-
-      <article class="project" data-page="project">
-
-        <header>
-          <h2 class="h2 article-title">Projects</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <!-- <li class="filter-item">
-              <button data-filter-btn>Web Development</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>UI/UX</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Machine Learning</button>
-            </li> -->
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
+            <div class="mini-demo__app">
+              <aside class="mini-demo__sidebar">
+                <a class="mini-demo__logo" href="#pairnest">pair<span>nest</span></a>
+                <button class="mini-demo__nav is-active" type="button" data-pairnest-view="home">Home</button>
+                <button class="mini-demo__nav" type="button" data-pairnest-view="wishlist">Wishlist</button>
+                <button class="mini-demo__nav" type="button" data-pairnest-view="goals">Future goals</button>
+                <button class="mini-demo__nav" type="button" data-pairnest-view="calendar">Calendar</button>
+                <span class="mini-demo__side-note">For two,<br />not for feeds.</span>
+              </aside>
+              <div class="mini-demo__content">
+                <div class="mini-demo__topline"><span>James &amp; Mia</span><span class="mini-demo__avatar">JM</span></div>
+
+                <section class="mini-demo__panel is-active" data-pairnest-panel="home" aria-label="PairNest home view">
+                  <p class="mini-demo__eyebrow">Alex &amp; Jamie’s shared space</p>
+                  <h3>Your world, together.</h3>
+                  <div class="mini-demo__highlight"><span>Next up</span><strong>Friday dinner hold</strong><small>7:30 pm · shared calendar</small></div>
+                  <div class="mini-demo__subhead"><span>At a glance</span><span>Open a view</span></div>
+                  <button class="mini-demo__task" type="button" data-demo-task><span class="mini-demo__task-check" aria-hidden="true"></span><span>2 saved wishlist ideas</span><small>Explore</small></button>
+                  <button class="mini-demo__task" type="button" data-demo-task><span class="mini-demo__task-check" aria-hidden="true"></span><span>2 future goals in progress</span><small>Explore</small></button>
+                </section>
+
+                <section class="mini-demo__panel" data-pairnest-panel="wishlist" aria-label="PairNest wishlist view" hidden>
+                  <p class="mini-demo__eyebrow">Little things worth saving</p>
+                  <h3>Wishlist</h3>
+                  <div class="mini-demo__balance"><span>Saved together</span><strong>Kyoto autumn trip</strong><small>Travel · high priority</small></div>
+                  <div class="mini-demo__expense"><span>Anniversary dinner shortlist</span><small>Restaurant · added by Alex</small><strong>Saved</strong></div>
+                  <div class="mini-demo__expense"><span>One place for ideas</span><small>Filter, sort, revisit</small><strong>+</strong></div>
+                </section>
+
+                <section class="mini-demo__panel" data-pairnest-panel="goals" aria-label="PairNest future goals view" hidden>
+                  <p class="mini-demo__eyebrow">Future goals</p>
+                  <h3>What you’re building.</h3>
+                  <div class="mini-demo__plan"><span class="mini-demo__day">35<br /><b>%</b></span><span><strong>Shared travel fund</strong><small>Finance · both</small></span></div>
+                  <div class="mini-demo__plan"><span class="mini-demo__day">10<br /><b>%</b></span><span><strong>Learn basic Japanese</strong><small>Learning · Jamie</small></span></div>
+                </section>
+
+                <section class="mini-demo__panel" data-pairnest-panel="calendar" aria-label="PairNest calendar view" hidden>
+                  <p class="mini-demo__eyebrow">One view of the calendar</p>
+                  <h3>See the overlap.</h3>
+                  <div class="mini-demo__plan"><span class="mini-demo__day">FRI<br /><b>07</b></span><span><strong>Friday dinner hold</strong><small>Shared · 7:30 pm</small></span></div>
+                  <div class="mini-demo__plan"><span class="mini-demo__day">WED<br /><b>08</b></span><span><strong>Apartment viewing</strong><small>Alex · 10:00 am</small></span></div>
+                </section>
+                <p class="mini-demo__status" role="status" aria-live="polite" data-demo-status>Prototype mode — changes stay on this page only.</p>
               </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <!-- <li class="select-item">
-                <button data-select-item>Web Devlopment</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>UI/UX</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Machine Learning</button>
-              </li> -->
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-
-            <li class="project-item  active" data-filter-item data-category="Instrcuctional Design">
-              <a href="./projects/biology/biology_prototype.html">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./img/project-3.png" alt="Biology for secondary student" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Biology for secondary student</h3>
-
-                <p class="project-category">Instrcuctional Design</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-         
-      
-
-
-      <!-- #CONTACT
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Let's talk.</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3013.2194036361548!2d-76.88765082331803!3d40.95477217135807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89cf13bc7ce64edd%3A0xf36ccf363eb9e9f9!2sBucknell%20University!5e0!3m2!1sen!2sus!4v1689324190088!5m2!1sen!2sus" 
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="https://formspree.io/f/moqoqgpv" method="POST">
-  
-            <div class="input-wrapper">
-              <input type="name" id="name" name="fullname" class="form-input" placeholder="Full name" required>
-
-              <input type="email" id="email" name="email" class="form-input" placeholder="Email address" required>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <textarea id="message" name="message" class="form-input" placeholder="Your Message" required></textarea>
-            
-            <button class="form-btn" type="submit">
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
+      <section class="journey section-shell" id="journey" aria-labelledby="journey-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-kicker">/ 04 — The journey so far</p>
+            <h2 id="journey-title">A foundation in systems, data, and people.</h2>
+          </div>
+          <a class="text-link" href="./documents/2025_Updated_Resume.pdf" download>Download résumé <span aria-hidden="true">↓</span></a>
+        </div>
 
-        </section>
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <span class="timeline-item__time">2021 — now</span>
+            <div><h3>Analyst / Programmer</h3><p>Working Family and Student Financial Assistance Agency, HKSAR</p></div>
+            <p class="timeline-item__detail">Shaping requirements, workflows, and testing for public-facing and administrative services.</p>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-item__time">2022 — 2024</span>
+            <div><h3>MSc Data Science, with Distinction</h3><p>City University of Hong Kong</p></div>
+            <p class="timeline-item__detail">Outstanding Research Project Award · a deeper foundation for evidence-led problem solving.</p>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-item__time">2020 — 2021</span>
+            <div><h3>Developer / IT Consultant</h3><p>Catalyst Solutions · Dynasys Solutions</p></div>
+            <p class="timeline-item__detail">Delivered RPA and enterprise-data work across a range of client environments.</p>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-item__time">2016 — 2020</span>
+            <div><h3>BSc Computing, Psychology minor</h3><p>The Hong Kong Polytechnic University</p></div>
+            <p class="timeline-item__detail">The technical grounding — and an enduring interest in how people think and learn.</p>
+          </li>
+        </ol>
+      </section>
 
-      </article> -->
+      <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
+        <div class="contact-card reveal">
+          <p class="section-kicker">/ 05 — Get in touch</p>
+          <h2 id="contact-title">Have a useful idea in mind?</h2>
+          <p>Whether it starts with a workflow, a learning experience, or a small experiment, I’d be glad to hear about it.</p>
+          <a class="button button--dark button--contact" href="mailto:longshanj@gmail.com">longshanj@gmail.com <span aria-hidden="true">↗</span></a>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/james-chong-1025" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            <span>Hong Kong</span>
+          </div>
+          <span class="contact-card__shape contact-card__shape--one" aria-hidden="true"></span>
+          <span class="contact-card__shape contact-card__shape--two" aria-hidden="true"></span>
+        </div>
+      </section>
+    </main>
 
-    </div>
+    <footer class="site-footer section-shell">
+      <span>© <span data-current-year>2026</span> James Chong</span>
+      <span>Built with care, curiosity, and good notes.</span>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
 
-  </main>
-
-
-  <!-- custom js link -->
-  <script src="./javascript/script.js"></script>
-  <script src="./javascript/server.js"></script>
-  <script src="./dist/bundle.js"></script>
-
-  <!-- ionicon link -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script src="./dist/bundle.js" defer></script>
+  </body>
 </html>

@@ -1,60 +1,22 @@
-# Nolan's Personal Portfolio
+# James Chong — Personal Portfolio
 
-![Nolan's Personal Portfolio Website](./img/nolan-s-portfolio-website.png)
+A responsive personal site for James Chong, a Hong Kong–based Analyst Programmer and systems-minded builder working across public services, data, learning, and useful digital tools.
 
-This personal portfolio website boasts a fully responsive, application-like design that seamlessly adapts to all devices. 📱 💻
+## Included
 
-# Features 🚀
+- A story-led professional portfolio with experience, education, contact details, and résumé download
+- A responsive, interactive PairNest concept demo built with fictional sample data only
+- A static site build that works with GitHub Pages and the configured Sites deployment flow
 
-- User-friendly
-- Minimal design
-- Application-like user interface and experience
-- Fully responsive for all devices
-- Easy to browse
-- Easy to customize details
-- Instagram profile supported using *Instagram Basic Display API*
-- Contact form using *Formspree.io*
+## Local build
 
-# Sections 🖥
+```bash
+npm install
+npm run build
+```
 
-- Nolan (Main)
-- Sidebar
-- Navbar
-- About
-- Resume
-- Project
-- Contact
+The project uses plain HTML, CSS, and JavaScript. PairNest intentionally has no sign-in, database, or persistent client storage.
 
-# Technologies Used ⚙
+## Contact
 
-I utilize a variety of technologies in my *Personal Portfolio* project, including, but not limited to, the following:
-
-- HTML
-- CSS
-- JavaScript
-- Node.js
-- Bundle.js
-- Babel.js
-- PHP
-- dotenv
-- Visual Studio Code
-- Git
-- Github
-- Instagram Basic Display API
-- Formspree
-- Ion-icon
-
-# License 📄
-
-The project is available as open source under the terms of the [MIT License](https://github.com/i-am-nolan25/Personal-Portfolio/blob/7debe883a958fa446a23434b655d6d732edb58e6/LICENSE).
-
-# Troubleshooting 🛠
-
-Please create an [issue](https://github.com/i-am-nolan25/Personal-Portfolio/issues/new).
-
-# Acknowledgment 🎊
-
-The project drew inspiration from [codewithsadee](https://github.com/codewithsadee) and underwent substantial modifications. The project also used [dotenv](https://github.com/motdotla/dotenv) from [Scott Motte](https://github.com/motdotla) to secure the [Instagram Basic Display API](https://developers.facebook.com/docs/instagram-basic-display-api/) access token and key. This project was built using [Node.js](https://nodejs.org/), a powerful JavaScript runtime that allowed us to run server-side code and build scalable applications. I am grateful to the Node.js community for their contributions and support.
-
-# Contact 📬
-For any inquiries, feedback, or collaboration opportunities, please feel free to reach out to me through my [email](nl020@bucknell.edu) or [LinkedIn](https://www.linkedin.com/in/naing-oo-lwin-nolan/).
+For collaborations or opportunities, email [longshanj@gmail.com](mailto:longshanj@gmail.com) or connect on [LinkedIn](https://www.linkedin.com/in/james-chong-1025).
