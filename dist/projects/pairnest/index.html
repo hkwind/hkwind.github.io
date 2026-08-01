@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#202723" />
+    <meta
+      name="description"
+      content="PairNest is a shared workspace for couples to collect wishlists, future goals, calendars, and memories."
+    />
+    <title>PairNest — shared space for two</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./pairnest.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#demo-main">Skip to the demo</a>
+
+    <header class="topbar">
+      <a class="back-link" href="../../index.html#pairnest"><span aria-hidden="true">←</span> James Chong’s portfolio</a>
+      <a class="brand" href="#demo-main" aria-label="PairNest demo home">pair<span>nest</span></a>
+      <button class="reset-button" type="button" data-reset-demo>Reset demo <span aria-hidden="true">↻</span></button>
+    </header>
+
+    <main id="demo-main">
+      <section class="intro" aria-labelledby="demo-title">
+        <div>
+          <p class="eyebrow"><span></span> Browser-only product walkthrough</p>
+          <h1 id="demo-title">A shared world,<br /><em>for two.</em></h1>
+          <p class="intro-copy">
+            PairNest gives a couple one gentle place for the things they are looking forward to: wishlists, future goals, calendar moments, and memories. This is a database-free walkthrough of the real product direction.
+          </p>
+        </div>
+        <aside class="demo-note">
+          <span class="demo-note__number">01 / 01</span>
+          <p>Fictional sample data.<br />No account required.<br />Nothing is stored.</p>
+        </aside>
+      </section>
+
+      <section class="app-frame" aria-label="PairNest interactive mockup" data-pairnest-app>
+        <div class="app-frame__chrome">
+          <div class="chrome-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          <span class="app-frame__url">pairnest.app / demo-couple</span>
+          <span class="app-frame__mode">sample mode</span>
+        </div>
+
+        <div class="app-shell">
+          <aside class="app-sidebar">
+            <a class="app-logo" href="#demo-main">pair<span>nest</span></a>
+            <p class="space-label">Alex &amp; Jamie</p>
+            <nav class="app-nav" aria-label="PairNest demo sections">
+              <button class="app-nav__item is-active" type="button" data-view-button="home"><span aria-hidden="true">⌂</span> Home</button>
+              <button class="app-nav__item" type="button" data-view-button="wishlist"><span aria-hidden="true">♡</span> Wishlist</button>
+              <button class="app-nav__item" type="button" data-view-button="goals"><span aria-hidden="true">↗</span> Future goals</button>
+              <button class="app-nav__item" type="button" data-view-button="calendar"><span aria-hidden="true">□</span> Calendar</button>
+              <button class="app-nav__item" type="button" data-view-button="memories"><span aria-hidden="true">◌</span> Memories</button>
+              <button class="app-nav__item" type="button" data-view-button="settings"><span aria-hidden="true">⋯</span> Settings</button>
+            </nav>
+            <div class="app-sidebar__bottom">
+              <span class="partner-avatar partner-avatar--a">A</span><span class="partner-avatar partner-avatar--b">J</span>
+              <p>For two,<br />not for feeds.</p>
+            </div>
+          </aside>
+
+          <div class="app-main">
+            <header class="app-main__header">
+              <div><p class="view-label" data-view-label>Home · Alex &amp; Jamie</p><h2 data-view-heading>Your world, together.</h2></div>
+              <button class="quiet-button" type="button" data-show-note>About this demo</button>
+            </header>
+
+            <section class="app-view is-active" data-view-panel="home" aria-labelledby="home-heading">
+              <h3 class="sr-only" id="home-heading">PairNest home</h3>
+              <div class="overview-grid">
+                <button class="overview-card overview-card--peach" type="button" data-jump-view="wishlist"><span>Wishlist</span><strong>2</strong><small>saved ideas</small></button>
+                <button class="overview-card overview-card--mint" type="button" data-jump-view="goals"><span>Future goals</span><strong>2</strong><small>shared plans</small></button>
+                <button class="overview-card overview-card--coral" type="button" data-jump-view="calendar"><span>Upcoming</span><strong>2</strong><small>calendar moments</small></button>
+                <button class="overview-card overview-card--lilac" type="button" data-jump-view="memories"><span>Memories</span><strong>0</strong><small>photos &amp; thoughts</small></button>
+              </div>
+
+              <section class="panel panel--coral">
+                <div class="panel-title"><div><span>Next up</span><h3>On the calendar</h3></div><button class="small-action" type="button" data-jump-view="calendar">Open calendar</button></div>
+                <button class="event-row" type="button" data-jump-view="calendar"><span class="event-line event-line--shared" aria-hidden="true"></span><div><strong>Friday dinner hold</strong><small>Fri, 7 August · 7:30 pm · shared</small></div><i aria-hidden="true">→</i></button>
+                <button class="event-row" type="button" data-jump-view="calendar"><span class="event-line event-line--alex" aria-hidden="true"></span><div><strong>Apartment viewing</strong><small>Wed, 12 August · 10:00 am · Alex</small></div><i aria-hidden="true">→</i></button>
+              </section>
+            </section>
+
+            <section class="app-view" data-view-panel="wishlist" aria-labelledby="wishlist-heading" hidden>
+              <div class="screen-intro"><div><span>Wishlist</span><h3 id="wishlist-heading">Little things worth saving.</h3></div><button class="small-action" type="button" data-add-wish>+ Add a wish</button></div>
+              <div class="filter-row"><span class="filter-pill is-active">All</span><span class="filter-pill">Travel</span><span class="filter-pill">Restaurant</span><span class="filter-pill">Priority</span></div>
+              <article class="wish-card wish-card--travel">
+                <div><span class="wish-card__meta">Travel · High priority</span><h4>Kyoto autumn trip</h4><p>Check ryokan availability and foliage timing.</p></div>
+                <div class="wish-card__footer"><span>Added by both</span><button type="button" data-complete-wish>Mark done</button></div>
+              </article>
+              <article class="wish-card wish-card--peach">
+                <div><span class="wish-card__meta">Restaurant · Medium priority</span><h4>Anniversary dinner shortlist</h4><p>Somewhere quiet with a tasting menu.</p></div>
+                <div class="wish-card__footer"><span>Added by Alex</span><button type="button" data-complete-wish>Mark done</button></div>
+              </article>
+            </section>
+
+            <section class="app-view" data-view-panel="goals" aria-labelledby="goals-heading" hidden>
+              <div class="screen-intro"><div><span>Future goals</span><h3 id="goals-heading">The plans you are building.</h3></div><button class="small-action" type="button" data-add-goal>+ Add a goal</button></div>
+              <article class="goal-card goal-card--forest">
+                <div class="goal-card__top"><div><span>Finance · both</span><h4>Build a shared travel fund</h4></div><strong data-goal-value="travel">35%</strong></div>
+                <p>Automate the monthly transfer after payday.</p>
+                <label>Progress <input type="range" min="0" max="100" value="35" data-goal-range="travel" /></label>
+              </article>
+              <article class="goal-card goal-card--lilac">
+                <div class="goal-card__top"><div><span>Learning · Jamie</span><h4>Learn basic Japanese together</h4></div><strong data-goal-value="japanese">10%</strong></div>
+                <p>A small shared goal for the trip ahead.</p>
+                <label>Progress <input type="range" min="0" max="100" value="10" data-goal-range="japanese" /></label>
+              </article>
+            </section>
+
+            <section class="app-view" data-view-panel="calendar" aria-labelledby="calendar-heading" hidden>
+              <div class="screen-intro"><div><span>Calendar</span><h3 id="calendar-heading">See the overlap.</h3></div><button class="small-action" type="button" data-add-event>+ Add event</button></div>
+              <div class="calendar-tools"><div class="segmented" role="group" aria-label="Calendar view"><button class="is-active" type="button" data-calendar-view="month">Month</button><button type="button" data-calendar-view="week">Week</button><button type="button" data-calendar-view="agenda">Agenda</button></div><div class="source-key"><span><i class="source-dot source-dot--alex"></i>Alex</span><span><i class="source-dot source-dot--jamie"></i>Jamie</span><span><i class="source-dot source-dot--shared"></i>Shared</span></div></div>
+              <div class="month-grid" data-calendar-content>
+                <span class="weekday">Mon</span><span class="weekday">Tue</span><span class="weekday">Wed</span><span class="weekday">Thu</span><span class="weekday">Fri</span><span class="weekday">Sat</span><span class="weekday">Sun</span>
+                <span class="day muted">3</span><span class="day muted">4</span><span class="day muted">5</span><span class="day muted">6</span><span class="day day--shared">7<small>Dinner</small></span><span class="day">8</span><span class="day">9</span>
+                <span class="day">10</span><span class="day">11</span><span class="day day--alex">12<small>Viewing</small></span><span class="day">13</span><span class="day">14</span><span class="day">15</span><span class="day">16</span>
+              </div>
+              <p class="calendar-caption" data-calendar-caption>Month view · colour makes the shared context easy to scan.</p>
+            </section>
+
+            <section class="app-view" data-view-panel="memories" aria-labelledby="memories-heading" hidden>
+              <div class="screen-intro"><div><span>Memories</span><h3 id="memories-heading">Keep the good parts close.</h3></div></div>
+              <div class="memory-empty"><span aria-hidden="true">✦</span><h4>Photos and thoughts, tied to a moment.</h4><p>PairNest can turn a finished plan into a small memory worth keeping.</p></div>
+              <form class="memory-form" data-memory-form><label for="memory-thought">Try a fictional memory note</label><textarea id="memory-thought" maxlength="140" placeholder="A small thought about Friday dinner…"></textarea><button type="submit">Save in this demo <span aria-hidden="true">↗</span></button></form>
+            </section>
+
+            <section class="app-view" data-view-panel="settings" aria-labelledby="settings-heading" hidden>
+              <div class="screen-intro"><div><span>Settings</span><h3 id="settings-heading">Make the space feel like yours.</h3></div></div>
+              <div class="settings-card"><span>Partner colours</span><div class="colour-pair"><i class="colour colour--alex"></i><i class="colour colour--jamie"></i><i class="colour colour--shared"></i></div><small>Each calendar source stays recognisable at a glance.</small></div>
+              <div class="settings-card"><span>Language</span><div class="language-pills"><button class="is-active" type="button" data-language="English">English</button><button type="button" data-language="繁中">繁中</button></div><small data-language-label>English is selected for this walkthrough.</small></div>
+              <div class="settings-card"><span>Anniversary</span><strong>Monthly milestones on</strong><small>Custom events and calendar connections belong in the full app.</small></div>
+            </section>
+
+            <p class="app-status" role="status" aria-live="polite" data-app-status>Sample mode is on — interactions only last until this page is reset.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="concept-notes" aria-labelledby="concept-title">
+        <div><p class="eyebrow eyebrow--dark"><span></span> A faithful portfolio version</p><h2 id="concept-title">Built from the real PairNest product shape.</h2></div>
+        <div class="concept-notes__copy"><p>The full project is a Next.js and TypeScript application with a Postgres/Prisma data model, calendar connection support, custom events, partner settings, and multilingual UI. This page deliberately removes the database and integrations while retaining the real product story.</p><a href="../../index.html#work">Back to James’s selected work <span aria-hidden="true">↗</span></a></div>
+      </section>
+    </main>
+
+    <div class="info-popover" data-info-popover hidden role="dialog" aria-modal="true" aria-labelledby="info-popover-title">
+      <div class="info-popover__card">
+        <button class="info-popover__close" type="button" data-close-note aria-label="Close information">×</button>
+        <p class="eyebrow eyebrow--dark"><span></span> PairNest, in this demo</p>
+        <h2 id="info-popover-title">A calm place for a couple’s shared context.</h2>
+        <p>PairNest is not another group chat or social feed. It is designed as a personal space for a pair to collect ideas, see the same calendar, work towards future goals, and save the moments that matter.</p>
+        <button class="modal-button" type="button" data-close-note>Got it</button>
+      </div>
+    </div>
+
+    <footer class="footer"><span>PairNest · fictional sample data only</span><span>Product concept by James Chong</span><a href="../../index.html">Portfolio <span aria-hidden="true">↗</span></a></footer>
+    <script src="./pairnest.js" defer></script>
+  </body>
+</html>
