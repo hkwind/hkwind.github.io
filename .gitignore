@@ -1,1 +1,8 @@
-
+node_modules/
+.npm-cache/
+dist/css/
+dist/documents/
+dist/img/
+dist/index.html
+dist/projects/
+dist/server/
